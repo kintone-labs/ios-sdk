@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KintoneErrorInvalidFieldValue</key>
+	<dict>
+		<key>ErrorCodeKey</key>
+		<string>K_ERROR_00001</string>
+		<key>DescriptionKey</key>
+		<string>Invalid field value.</string>
+		<key>FailureReasonKey</key>
+		<string>Invalid field value: %@</string>
+		<key>RecoverySuggestionKey</key>
+		<string></string>
+	</dict>
+	<key>CBErrorFailBasicAuthentication</key>
+	<dict>
+		<key>ErrorCodeKey</key>
+		<string>C_ERROR_00003</string>
+		<key>DescriptionKey</key>
+		<string>Basic authentication failed.</string>
+		<key>FailureReasonKey</key>
+		<string>Invalid login name or password for Basic authentication.</string>
+		<key>RecoverySuggestionKey</key>
+		<string>Enter correct login name and password for Basic authentication.</string>
+	</dict>
+	<key>CBErrorCannotImportCertificate</key>
+	<dict>
+		<key>ErrorCodeKey</key>
+		<string>C_ERROR_00002</string>
+		<key>DescriptionKey</key>
+		<string>Cannot import certificate.</string>
+		<key>FailureReasonKey</key>
+		<string>Certificate or password is invalid. (Result Code: %d)</string>
+		<key>RecoverySuggestionKey</key>
+		<string></string>
+	</dict>
+	<key>CBErrorCannotOperateKeychain</key>
+	<dict>
+		<key>ErrorCodeKey</key>
+		<string>C_ERROR_00001</string>
+		<key>DescriptionKey</key>
+		<string>Cannot save credentials.</string>
+		<key>FailureReasonKey</key>
+		<string>Cannot access to Keychain. (Result Code: %d)</string>
+		<key>RecoverySuggestionKey</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

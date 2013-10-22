@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		85FDB8CC1748A54200E2C6F3 /* docs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 85FDB8CF1748A54200E2C6F3 /* Build configuration list for PBXAggregateTarget "docs" */;
+			buildPhases = (
+				85FDB8D01748A61700E2C6F3 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = docs;
+			productName = docs;
+		};
+		F1F37BA2173A46D000CB97D9 /* kintone.framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1F37BA3173A46D000CB97D9 /* Build configuration list for PBXAggregateTarget "kintone.framework" */;
+			buildPhases = (
+				F1F37BA6173A46FF00CB97D9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = kintone.framework;
+			productName = kintone.framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		85975BA0173FC45300F05D2D /* CBKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 85975B9F173FC45200F05D2D /* CBKeychain.m */; };
+		85C67A99176327C500E170DD /* CBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C67A98176327C500E170DD /* CBNetworking.m */; };
+		F115BB441770300300F94DD9 /* CBOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F115BB431770300300F94DD9 /* CBOperationQueue.m */; };
+		F13C669A17718B210078ABA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13C669917718B210078ABA8 /* SystemConfiguration.framework */; };
+		F13C669C17718D320078ABA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13C669B17718D320078ABA8 /* MobileCoreServices.framework */; };
+		F14E44DB174B081C00FC68B7 /* CBError.m in Sources */ = {isa = PBXBuildFile; fileRef = F14E44DA174B081C00FC68B7 /* CBError.m */; };
+		F14E44E4174B4B9900FC68B7 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = F14E44E3174B4B9800FC68B7 /* NSString+Utility.m */; };
+		F17B3B8F174F7F54001BD877 /* KintoneErrorMessages.plist in Resources */ = {isa = PBXBuildFile; fileRef = F17B3B91174F7F54001BD877 /* KintoneErrorMessages.plist */; };
+		F199C640174F4CCB0044B01F /* KintoneLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F199C642174F4CCB0044B01F /* KintoneLocalizable.strings */; };
+		F1A18CF0177C4BE60027962A /* KintoneFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A18CEF177C4BE60027962A /* KintoneFile.m */; };
+		F1BA626E1740A06500F1B6A7 /* KintoneBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BA626D1740A06500F1B6A7 /* KintoneBaseAppDelegate.m */; };
+		F1E6F3A0175DAA87006D90F8 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F38E175DAA87006D90F8 /* AFHTTPClient.m */; };
+		F1E6F3A1175DAA87006D90F8 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F390175DAA87006D90F8 /* AFHTTPRequestOperation.m */; };
+		F1E6F3A2175DAA87006D90F8 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F392175DAA87006D90F8 /* AFImageRequestOperation.m */; };
+		F1E6F3A3175DAA87006D90F8 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F394175DAA87006D90F8 /* AFJSONRequestOperation.m */; };
+		F1E6F3A4175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F396175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.m */; };
+		F1E6F3A5175DAA87006D90F8 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F399175DAA87006D90F8 /* AFPropertyListRequestOperation.m */; };
+		F1E6F3A6175DAA87006D90F8 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F39B175DAA87006D90F8 /* AFURLConnectionOperation.m */; };
+		F1E6F3A7175DAA87006D90F8 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F39D175DAA87006D90F8 /* AFXMLRequestOperation.m */; };
+		F1E6F3A8175DAA87006D90F8 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6F39F175DAA87006D90F8 /* UIImageView+AFNetworking.m */; };
+		F1F31A8C1740B062000EE4EE /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F31A851740B062000EE4EE /* DDASLLogger.m */; };
+		F1F31A8D1740B062000EE4EE /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F31A871740B062000EE4EE /* DDFileLogger.m */; };
+		F1F31A8E1740B062000EE4EE /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F31A891740B062000EE4EE /* DDLog.m */; };
+		F1F31A8F1740B062000EE4EE /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F31A8B1740B062000EE4EE /* DDTTYLogger.m */; };
+		F1F31A931740D58E000EE4EE /* CBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F31A921740D58E000EE4EE /* CBLog.m */; };
+		F1F37B64173A3E5E00CB97D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37B63173A3E5E00CB97D9 /* Foundation.framework */; };
+		F1F37B93173A421100CB97D9 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B85173A421100CB97D9 /* NSDate+Utility.m */; };
+		F1F37B96173A421100CB97D9 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B88173A421100CB97D9 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F37B97173A421100CB97D9 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B89173A421100CB97D9 /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F37B98173A421100CB97D9 /* KintoneAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B8A173A421100CB97D9 /* KintoneAPI.m */; };
+		F1F37B99173A421100CB97D9 /* KintoneApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B8B173A421100CB97D9 /* KintoneApplication.m */; };
+		F1F37B9A173A421100CB97D9 /* CBCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B8C173A421100CB97D9 /* CBCredential.m */; };
+		F1F37B9B173A421100CB97D9 /* KintoneField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B8D173A421100CB97D9 /* KintoneField.m */; };
+		F1F37B9E173A421100CB97D9 /* KintoneQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B90173A421100CB97D9 /* KintoneQuery.m */; };
+		F1F37B9F173A421100CB97D9 /* KintoneRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B91173A421100CB97D9 /* KintoneRecord.m */; };
+		F1F37BA0173A421100CB97D9 /* KintoneSite.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F37B92173A421100CB97D9 /* KintoneSite.m */; };
+		F1F37BA8173A531400CB97D9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37BA7173A531400CB97D9 /* Security.framework */; };
+		F1F37BAA173A531E00CB97D9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37BA9173A531D00CB97D9 /* CoreData.framework */; };
+		F1F37BAC173A53D400CB97D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37BAB173A53D400CB97D9 /* UIKit.framework */; };
+		F1F870FC17A23343001B002D /* kintoneResources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F199C636174F4BF00044B01F /* kintoneResources-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F17B3B86174F7232001BD877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1F37B58173A3E5E00CB97D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F199C631174F4BF00044B01F;
+			remoteInfo = kintoneResources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1F37B5E173A3E5E00CB97D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85975B9E173FC45200F05D2D /* CBKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBKeychain.h; sourceTree = "<group>"; };
+		85975B9F173FC45200F05D2D /* CBKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBKeychain.m; sourceTree = "<group>"; };
+		85C67A97176327C500E170DD /* CBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNetworking.h; sourceTree = "<group>"; };
+		85C67A98176327C500E170DD /* CBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNetworking.m; sourceTree = "<group>"; };
+		F115BB421770300300F94DD9 /* CBOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBOperationQueue.h; sourceTree = "<group>"; };
+		F115BB431770300300F94DD9 /* CBOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBOperationQueue.m; sourceTree = "<group>"; };
+		F13C669917718B210078ABA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F13C669B17718D320078ABA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F14E44D9174B081C00FC68B7 /* CBError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBError.h; sourceTree = "<group>"; };
+		F14E44DA174B081C00FC68B7 /* CBError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBError.m; sourceTree = "<group>"; };
+		F14E44E2174B4B9800FC68B7 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		F14E44E3174B4B9800FC68B7 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		F14E4506174B5CCA00FC68B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14E4511174C827400FC68B7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F17B3B90174F7F54001BD877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/KintoneErrorMessages.plist; sourceTree = "<group>"; };
+		F17B3B92174F7F5A001BD877 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/KintoneErrorMessages.plist; sourceTree = "<group>"; };
+		F199C61D174F07800044B01F /* KintoneBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KintoneBundle.h; sourceTree = "<group>"; };
+		F199C632174F4BF00044B01F /* kintoneResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kintoneResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F199C636174F4BF00044B01F /* kintoneResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kintoneResources-Info.plist"; sourceTree = "<group>"; };
+		F199C638174F4BF00044B01F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F199C641174F4CCB0044B01F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KintoneLocalizable.strings; sourceTree = "<group>"; };
+		F199C643174F4CD20044B01F /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/KintoneLocalizable.strings; sourceTree = "<group>"; };
+		F1A18CEE177C4BE60027962A /* KintoneFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneFile.h; sourceTree = "<group>"; };
+		F1A18CEF177C4BE60027962A /* KintoneFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneFile.m; sourceTree = "<group>"; };
+		F1BA626C1740A06500F1B6A7 /* KintoneBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneBaseAppDelegate.h; sourceTree = "<group>"; };
+		F1BA626D1740A06500F1B6A7 /* KintoneBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneBaseAppDelegate.m; sourceTree = "<group>"; };
+		F1E6F38D175DAA87006D90F8 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		F1E6F38E175DAA87006D90F8 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		F1E6F38F175DAA87006D90F8 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F1E6F390175DAA87006D90F8 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F1E6F391175DAA87006D90F8 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		F1E6F392175DAA87006D90F8 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		F1E6F393175DAA87006D90F8 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		F1E6F394175DAA87006D90F8 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		F1E6F395175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		F1E6F396175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		F1E6F397175DAA87006D90F8 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F1E6F398175DAA87006D90F8 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		F1E6F399175DAA87006D90F8 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		F1E6F39A175DAA87006D90F8 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F1E6F39B175DAA87006D90F8 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F1E6F39C175DAA87006D90F8 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		F1E6F39D175DAA87006D90F8 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		F1E6F39E175DAA87006D90F8 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		F1E6F39F175DAA87006D90F8 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		F1F31A841740B062000EE4EE /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		F1F31A851740B062000EE4EE /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		F1F31A861740B062000EE4EE /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		F1F31A871740B062000EE4EE /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		F1F31A881740B062000EE4EE /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		F1F31A891740B062000EE4EE /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		F1F31A8A1740B062000EE4EE /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		F1F31A8B1740B062000EE4EE /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		F1F31A901740B3C4000EE4EE /* CBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLog.h; sourceTree = "<group>"; };
+		F1F31A921740D58E000EE4EE /* CBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLog.m; sourceTree = "<group>"; };
+		F1F37B60173A3E5E00CB97D9 /* libkintone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkintone.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F37B63173A3E5E00CB97D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1F37B67173A3E5E00CB97D9 /* kintone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kintone-Prefix.pch"; sourceTree = "<group>"; };
+		F1F37B74173A41BD00CB97D9 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		F1F37B77173A41BD00CB97D9 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		F1F37B78173A41BD00CB97D9 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		F1F37B79173A41BD00CB97D9 /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		F1F37B7A173A41BD00CB97D9 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		F1F37B7B173A41BD00CB97D9 /* Kintone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kintone.h; sourceTree = "<group>"; };
+		F1F37B7C173A41BD00CB97D9 /* KintoneAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneAPI.h; sourceTree = "<group>"; };
+		F1F37B7D173A41BD00CB97D9 /* KintoneApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneApplication.h; sourceTree = "<group>"; };
+		F1F37B7E173A41BD00CB97D9 /* CBCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCredential.h; sourceTree = "<group>"; };
+		F1F37B7F173A41BD00CB97D9 /* KintoneField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneField.h; sourceTree = "<group>"; };
+		F1F37B82173A41BD00CB97D9 /* KintoneQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneQuery.h; sourceTree = "<group>"; };
+		F1F37B83173A41BD00CB97D9 /* KintoneRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneRecord.h; sourceTree = "<group>"; };
+		F1F37B84173A41BD00CB97D9 /* KintoneSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KintoneSite.h; sourceTree = "<group>"; };
+		F1F37B85173A421100CB97D9 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		F1F37B88173A421100CB97D9 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		F1F37B89173A421100CB97D9 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		F1F37B8A173A421100CB97D9 /* KintoneAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneAPI.m; sourceTree = "<group>"; };
+		F1F37B8B173A421100CB97D9 /* KintoneApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneApplication.m; sourceTree = "<group>"; };
+		F1F37B8C173A421100CB97D9 /* CBCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCredential.m; sourceTree = "<group>"; };
+		F1F37B8D173A421100CB97D9 /* KintoneField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneField.m; sourceTree = "<group>"; };
+		F1F37B90173A421100CB97D9 /* KintoneQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneQuery.m; sourceTree = "<group>"; };
+		F1F37B91173A421100CB97D9 /* KintoneRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneRecord.m; sourceTree = "<group>"; };
+		F1F37B92173A421100CB97D9 /* KintoneSite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KintoneSite.m; sourceTree = "<group>"; };
+		F1F37BA7173A531400CB97D9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F1F37BA9173A531D00CB97D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F1F37BAB173A53D400CB97D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F199C62F174F4BF00044B01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F37B5D173A3E5E00CB97D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F37BAC173A53D400CB97D9 /* UIKit.framework in Frameworks */,
+				F1F37BAA173A531E00CB97D9 /* CoreData.framework in Frameworks */,
+				F1F37BA8173A531400CB97D9 /* Security.framework in Frameworks */,
+				F1F37B64173A3E5E00CB97D9 /* Foundation.framework in Frameworks */,
+				F13C669A17718B210078ABA8 /* SystemConfiguration.framework in Frameworks */,
+				F13C669C17718D320078ABA8 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F199C634174F4BF00044B01F /* kintoneResources */ = {
+			isa = PBXGroup;
+			children = (
+				F199C635174F4BF00044B01F /* Supporting Files */,
+				F199C642174F4CCB0044B01F /* KintoneLocalizable.strings */,
+				F17B3B91174F7F54001BD877 /* KintoneErrorMessages.plist */,
+			);
+			path = kintoneResources;
+			sourceTree = "<group>";
+		};
+		F199C635174F4BF00044B01F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F199C636174F4BF00044B01F /* kintoneResources-Info.plist */,
+				F199C637174F4BF00044B01F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1E6F38C175DAA87006D90F8 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6F38D175DAA87006D90F8 /* AFHTTPClient.h */,
+				F1E6F38E175DAA87006D90F8 /* AFHTTPClient.m */,
+				F1E6F38F175DAA87006D90F8 /* AFHTTPRequestOperation.h */,
+				F1E6F390175DAA87006D90F8 /* AFHTTPRequestOperation.m */,
+				F1E6F391175DAA87006D90F8 /* AFImageRequestOperation.h */,
+				F1E6F392175DAA87006D90F8 /* AFImageRequestOperation.m */,
+				F1E6F393175DAA87006D90F8 /* AFJSONRequestOperation.h */,
+				F1E6F394175DAA87006D90F8 /* AFJSONRequestOperation.m */,
+				F1E6F395175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.h */,
+				F1E6F396175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.m */,
+				F1E6F397175DAA87006D90F8 /* AFNetworking.h */,
+				F1E6F398175DAA87006D90F8 /* AFPropertyListRequestOperation.h */,
+				F1E6F399175DAA87006D90F8 /* AFPropertyListRequestOperation.m */,
+				F1E6F39A175DAA87006D90F8 /* AFURLConnectionOperation.h */,
+				F1E6F39B175DAA87006D90F8 /* AFURLConnectionOperation.m */,
+				F1E6F39C175DAA87006D90F8 /* AFXMLRequestOperation.h */,
+				F1E6F39D175DAA87006D90F8 /* AFXMLRequestOperation.m */,
+				F1E6F39E175DAA87006D90F8 /* UIImageView+AFNetworking.h */,
+				F1E6F39F175DAA87006D90F8 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F1F31A831740AFEB000EE4EE /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				F1F31A841740B062000EE4EE /* DDASLLogger.h */,
+				F1F31A851740B062000EE4EE /* DDASLLogger.m */,
+				F1F31A861740B062000EE4EE /* DDFileLogger.h */,
+				F1F31A871740B062000EE4EE /* DDFileLogger.m */,
+				F1F31A881740B062000EE4EE /* DDLog.h */,
+				F1F31A891740B062000EE4EE /* DDLog.m */,
+				F1F31A8A1740B062000EE4EE /* DDTTYLogger.h */,
+				F1F31A8B1740B062000EE4EE /* DDTTYLogger.m */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		F1F37B57173A3E5E00CB97D9 = {
+			isa = PBXGroup;
+			children = (
+				F1F37B65173A3E5E00CB97D9 /* sdk */,
+				F199C634174F4BF00044B01F /* kintoneResources */,
+				F1F37B62173A3E5E00CB97D9 /* Frameworks */,
+				F1F37B61173A3E5E00CB97D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F37B61173A3E5E00CB97D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F37B60173A3E5E00CB97D9 /* libkintone.a */,
+				F199C632174F4BF00044B01F /* kintoneResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F37B62173A3E5E00CB97D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F37BA9173A531D00CB97D9 /* CoreData.framework */,
+				F1F37B63173A3E5E00CB97D9 /* Foundation.framework */,
+				F13C669B17718D320078ABA8 /* MobileCoreServices.framework */,
+				F1F37BA7173A531400CB97D9 /* Security.framework */,
+				F13C669917718B210078ABA8 /* SystemConfiguration.framework */,
+				F1F37BAB173A53D400CB97D9 /* UIKit.framework */,
+				F14E4511174C827400FC68B7 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F37B65173A3E5E00CB97D9 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				F1F37B73173A404400CB97D9 /* Resources */,
+				F1F37B72173A403B00CB97D9 /* Classes */,
+				F1F37B71173A402A00CB97D9 /* Headers */,
+				F1F37B66173A3E5E00CB97D9 /* Supporting Files */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		F1F37B66173A3E5E00CB97D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1F37B67173A3E5E00CB97D9 /* kintone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1F37B71173A402A00CB97D9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F1F37B7E173A41BD00CB97D9 /* CBCredential.h */,
+				F14E44D9174B081C00FC68B7 /* CBError.h */,
+				F1F31A901740B3C4000EE4EE /* CBLog.h */,
+				85C67A97176327C500E170DD /* CBNetworking.h */,
+				F115BB421770300300F94DD9 /* CBOperationQueue.h */,
+				F1F37B7B173A41BD00CB97D9 /* Kintone.h */,
+				F1F37B7C173A41BD00CB97D9 /* KintoneAPI.h */,
+				F1F37B7D173A41BD00CB97D9 /* KintoneApplication.h */,
+				F1BA626C1740A06500F1B6A7 /* KintoneBaseAppDelegate.h */,
+				F199C61D174F07800044B01F /* KintoneBundle.h */,
+				F1F37B7F173A41BD00CB97D9 /* KintoneField.h */,
+				F1A18CEE177C4BE60027962A /* KintoneFile.h */,
+				F1F37B82173A41BD00CB97D9 /* KintoneQuery.h */,
+				F1F37B83173A41BD00CB97D9 /* KintoneRecord.h */,
+				F1F37B84173A41BD00CB97D9 /* KintoneSite.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		F1F37B72173A403B00CB97D9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F1FC83B8173C776800441AFB /* GTM */,
+				F1F31A831740AFEB000EE4EE /* Lumberjack */,
+				F1E6F38C175DAA87006D90F8 /* AFNetworking */,
+				F1F37B8C173A421100CB97D9 /* CBCredential.m */,
+				F14E44DA174B081C00FC68B7 /* CBError.m */,
+				85975B9E173FC45200F05D2D /* CBKeychain.h */,
+				85975B9F173FC45200F05D2D /* CBKeychain.m */,
+				F1F31A921740D58E000EE4EE /* CBLog.m */,
+				85C67A98176327C500E170DD /* CBNetworking.m */,
+				F115BB431770300300F94DD9 /* CBOperationQueue.m */,
+				F1F37B8A173A421100CB97D9 /* KintoneAPI.m */,
+				F1F37B8B173A421100CB97D9 /* KintoneApplication.m */,
+				F1BA626D1740A06500F1B6A7 /* KintoneBaseAppDelegate.m */,
+				F1F37B8D173A421100CB97D9 /* KintoneField.m */,
+				F1A18CEF177C4BE60027962A /* KintoneFile.m */,
+				F1F37B90173A421100CB97D9 /* KintoneQuery.m */,
+				F1F37B91173A421100CB97D9 /* KintoneRecord.m */,
+				F1F37B92173A421100CB97D9 /* KintoneSite.m */,
+				F1F37B74173A41BD00CB97D9 /* NSDate+Utility.h */,
+				F1F37B85173A421100CB97D9 /* NSDate+Utility.m */,
+				F14E44E2174B4B9800FC68B7 /* NSString+Utility.h */,
+				F14E44E3174B4B9800FC68B7 /* NSString+Utility.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F1F37B73173A404400CB97D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F14E4506174B5CCA00FC68B7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1FC83B8173C776800441AFB /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				F1F37B77173A41BD00CB97D9 /* GTMBase64.h */,
+				F1F37B88173A421100CB97D9 /* GTMBase64.m */,
+				F1F37B78173A41BD00CB97D9 /* GTMDefines.h */,
+				F1F37B79173A41BD00CB97D9 /* GTMGarbageCollection.h */,
+				F1F37B7A173A41BD00CB97D9 /* GTMNSString+URLArguments.h */,
+				F1F37B89173A421100CB97D9 /* GTMNSString+URLArguments.m */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F199C631174F4BF00044B01F /* kintoneResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F199C63B174F4BF00044B01F /* Build configuration list for PBXNativeTarget "kintoneResources" */;
+			buildPhases = (
+				F199C62E174F4BF00044B01F /* Sources */,
+				F199C62F174F4BF00044B01F /* Frameworks */,
+				F199C630174F4BF00044B01F /* Resources */,
+				F17B3B88174F7639001BD877 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kintoneResources;
+			productName = kintoneResources;
+			productReference = F199C632174F4BF00044B01F /* kintoneResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F1F37B5F173A3E5E00CB97D9 /* sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F37B6E173A3E5E00CB97D9 /* Build configuration list for PBXNativeTarget "sdk" */;
+			buildPhases = (
+				F1F37B5C173A3E5E00CB97D9 /* Sources */,
+				F1F37B5D173A3E5E00CB97D9 /* Frameworks */,
+				F1F37B5E173A3E5E00CB97D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17B3B87174F7232001BD877 /* PBXTargetDependency */,
+			);
+			name = sdk;
+			productName = sdk;
+			productReference = F1F37B60173A3E5E00CB97D9 /* libkintone.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F37B58173A3E5E00CB97D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Cybozu;
+			};
+			buildConfigurationList = F1F37B5B173A3E5E00CB97D9 /* Build configuration list for PBXProject "kintone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = F1F37B57173A3E5E00CB97D9;
+			productRefGroup = F1F37B61173A3E5E00CB97D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F37B5F173A3E5E00CB97D9 /* sdk */,
+				F1F37BA2173A46D000CB97D9 /* kintone.framework */,
+				F199C631174F4BF00044B01F /* kintoneResources */,
+				85FDB8CC1748A54200E2C6F3 /* docs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F199C630174F4BF00044B01F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F870FC17A23343001B002D /* kintoneResources-Info.plist in Resources */,
+				F199C640174F4CCB0044B01F /* KintoneLocalizable.strings in Resources */,
+				F17B3B8F174F7F54001BD877 /* KintoneErrorMessages.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85FDB8D01748A61700E2C6F3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APPLEDOC=/usr/local/bin/appledoc\nif [ -x \"${APPLEDOC}\" ]; then\nINFOPLIST='sdk/Resources/Info.plist'\nFRAMEWORK_NAME=$(/usr/libexec/PlistBuddy -c \"Print CFBundleName\" ${INFOPLIST})\nFRAMEWORK_DIR=\"Framework/${FRAMEWORK_NAME}.framework\"\nDOC_DIR=\"../docs\"\nAPPLEDOC_TEMPLATE_PATH=\"${DOC_DIR}/appledoc\"\n# create document set\n${APPLEDOC} -p \"kintone SDK for iOS\" -c Cybozu --company-id \"com.cybozu\" -o ../ --templates ${APPLEDOC_TEMPLATE_PATH} --no-warn-invalid-crossref ${FRAMEWORK_DIR}/Headers\n# create html document\n${APPLEDOC} -p \"kintone SDK for iOS\" -c Cybozu --no-create-docset -o ${DOC_DIR} --templates ${APPLEDOC_TEMPLATE_PATH} --no-warn-invalid-crossref ${FRAMEWORK_DIR}/Headers\n# zip and mv\ncd ${DOC_DIR}\nzip -ry docs.zip html\nfi\n";
+		};
+		F17B3B88174F7639001BD877 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_BUILD_CONFIGURATION=\"Release\"\nFRAMEWORK_BUILD_PATH=\"Framework\"\n\ncp -Rf build/${FRAMEWORK_BUILD_CONFIGURATION}-${PLATFORM_NAME}/${FULL_PRODUCT_NAME} ${FRAMEWORK_BUILD_PATH}/\ncd ${FRAMEWORK_BUILD_PATH}\nzip -ry ${FULL_PRODUCT_NAME}.zip ${FULL_PRODUCT_NAME}";
+		};
+		F1F37BA6173A46FF00CB97D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ==============================\n# environment variables\n# ==============================\nINFOPLIST='sdk/Resources/Info.plist'\nFRAMEWORK_NAME=$(/usr/libexec/PlistBuddy -c \"Print CFBundleName\" ${INFOPLIST})\n#BUILD_TARGET_NAME=$FRAMEWORK_NAME\nBUILD_TARGET_NAME='sdk'\nFRAMEWORK_BUILD_CONFIGURATION=\"Release\"\nFRAMEWORK_VERSION_NUMBER=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" ${INFOPLIST})\nFRAMEWORK_VERSION=A\nFRAMEWORK_BUILD_PATH=\"Framework\"\nFRAMEWORK_DIR=\"${FRAMEWORK_BUILD_PATH}/${FRAMEWORK_NAME}.framework\"\nPACKAGENAME=\"${FRAMEWORK_NAME}.${FRAMEWORK_VERSION_NUMBER}.zip\"\n\n# ==============================\n# build\n# ==============================\nxcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -target ${BUILD_TARGET_NAME} clean\nxcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -target ${BUILD_TARGET_NAME} -sdk iphonesimulator${IPHONEOS_DEPLOYMENT_TARGET}\n[ $? != 0 ] && exit 1\nxcodebuild -configuration ${FRAMEWORK_BUILD_CONFIGURATION} -target ${BUILD_TARGET_NAME} -sdk iphoneos\n[ $? != 0 ] && exit 1\n\n# ==============================\n# set up directories\n# ==============================\n[ -d \"${FRAMEWORK_BUILD_PATH}\" ] && rm -rf \"${FRAMEWORK_BUILD_PATH}\"\nmkdir -p ${FRAMEWORK_DIR}\nmkdir -p ${FRAMEWORK_DIR}/Versions\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\nmkdir -p ${FRAMEWORK_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\nln -s ${FRAMEWORK_VERSION} ${FRAMEWORK_DIR}/Versions/Current\nln -s Versions/Current/Headers ${FRAMEWORK_DIR}/Headers\nln -s Versions/Current/Resources ${FRAMEWORK_DIR}/Resources\nln -s Versions/Current/${FRAMEWORK_NAME} ${FRAMEWORK_DIR}/${FRAMEWORK_NAME}\n\n# ==============================\n# create library\n# ==============================\nlipo -create \\\nbuild/${FRAMEWORK_BUILD_CONFIGURATION}-iphoneos/lib${FRAMEWORK_NAME}.a \\\nbuild/${FRAMEWORK_BUILD_CONFIGURATION}-iphonesimulator/lib${FRAMEWORK_NAME}.a \\\n-o \"${FRAMEWORK_DIR}/Versions/Current/${FRAMEWORK_NAME}\"\n\n# ==============================\n# copy assets\n# ==============================\ncp -Rf ${BUILD_TARGET_NAME}/Headers/* ${FRAMEWORK_DIR}/Headers/\ncp ${BUILD_TARGET_NAME}/Resources/* ${FRAMEWORK_DIR}/Resources/\ncp ${INFOPLIST} ${FRAMEWORK_DIR}/Resources/\n\n# ==============================\n# package framework\n# ==============================\ncd ${FRAMEWORK_BUILD_PATH}\nchmod -fR 777 \"${FRAMEWORK_NAME}.framework\"\nzip -ry ${PACKAGENAME} $(basename $FRAMEWORK_DIR)";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F199C62E174F4BF00044B01F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F37B5C173A3E5E00CB97D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F31A8E1740B062000EE4EE /* DDLog.m in Sources */,
+				F1F31A8C1740B062000EE4EE /* DDASLLogger.m in Sources */,
+				F1F31A8F1740B062000EE4EE /* DDTTYLogger.m in Sources */,
+				F1F31A8D1740B062000EE4EE /* DDFileLogger.m in Sources */,
+				F1F37B96173A421100CB97D9 /* GTMBase64.m in Sources */,
+				F1F37B97173A421100CB97D9 /* GTMNSString+URLArguments.m in Sources */,
+				F1F37B93173A421100CB97D9 /* NSDate+Utility.m in Sources */,
+				85975BA0173FC45300F05D2D /* CBKeychain.m in Sources */,
+				F1BA626E1740A06500F1B6A7 /* KintoneBaseAppDelegate.m in Sources */,
+				F1F31A931740D58E000EE4EE /* CBLog.m in Sources */,
+				F14E44DB174B081C00FC68B7 /* CBError.m in Sources */,
+				F1F37B98173A421100CB97D9 /* KintoneAPI.m in Sources */,
+				F1F37B99173A421100CB97D9 /* KintoneApplication.m in Sources */,
+				F1F37B9A173A421100CB97D9 /* CBCredential.m in Sources */,
+				F1F37B9B173A421100CB97D9 /* KintoneField.m in Sources */,
+				F1F37B9E173A421100CB97D9 /* KintoneQuery.m in Sources */,
+				F1F37B9F173A421100CB97D9 /* KintoneRecord.m in Sources */,
+				F1F37BA0173A421100CB97D9 /* KintoneSite.m in Sources */,
+				F14E44E4174B4B9900FC68B7 /* NSString+Utility.m in Sources */,
+				F1E6F3A0175DAA87006D90F8 /* AFHTTPClient.m in Sources */,
+				F1E6F3A1175DAA87006D90F8 /* AFHTTPRequestOperation.m in Sources */,
+				F1E6F3A2175DAA87006D90F8 /* AFImageRequestOperation.m in Sources */,
+				F1E6F3A3175DAA87006D90F8 /* AFJSONRequestOperation.m in Sources */,
+				F1E6F3A4175DAA87006D90F8 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				F1E6F3A5175DAA87006D90F8 /* AFPropertyListRequestOperation.m in Sources */,
+				F1E6F3A6175DAA87006D90F8 /* AFURLConnectionOperation.m in Sources */,
+				F1E6F3A7175DAA87006D90F8 /* AFXMLRequestOperation.m in Sources */,
+				F1E6F3A8175DAA87006D90F8 /* UIImageView+AFNetworking.m in Sources */,
+				85C67A99176327C500E170DD /* CBNetworking.m in Sources */,
+				F115BB441770300300F94DD9 /* CBOperationQueue.m in Sources */,
+				F1A18CF0177C4BE60027962A /* KintoneFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F17B3B87174F7232001BD877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F199C631174F4BF00044B01F /* kintoneResources */;
+			targetProxy = F17B3B86174F7232001BD877 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F17B3B91174F7F54001BD877 /* KintoneErrorMessages.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17B3B90174F7F54001BD877 /* en */,
+				F17B3B92174F7F5A001BD877 /* ja */,
+			);
+			name = KintoneErrorMessages.plist;
+			sourceTree = "<group>";
+		};
+		F199C637174F4BF00044B01F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F199C638174F4BF00044B01F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F199C642174F4CCB0044B01F /* KintoneLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F199C641174F4CCB0044B01F /* en */,
+				F199C643174F4CD20044B01F /* ja */,
+			);
+			name = KintoneLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85FDB8CD1748A54200E2C6F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85FDB8CE1748A54200E2C6F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F199C63C174F4BF00044B01F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kintoneResources/kintoneResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "kintoneResources/kintoneResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F199C63D174F4BF00044B01F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kintoneResources/kintoneResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "kintoneResources/kintoneResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F1F37B6C173A3E5E00CB97D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1F37B6D173A3E5E00CB97D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F37B6F173A3E5E00CB97D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/sdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sdk/kintone-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = kintone;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1F37B70173A3E5E00CB97D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/sdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sdk/kintone-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = kintone;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F1F37BA4173A46D000CB97D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1F37BA5173A46D000CB97D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85FDB8CF1748A54200E2C6F3 /* Build configuration list for PBXAggregateTarget "docs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FDB8CD1748A54200E2C6F3 /* Debug */,
+				85FDB8CE1748A54200E2C6F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F199C63B174F4BF00044B01F /* Build configuration list for PBXNativeTarget "kintoneResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F199C63C174F4BF00044B01F /* Debug */,
+				F199C63D174F4BF00044B01F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F37B5B173A3E5E00CB97D9 /* Build configuration list for PBXProject "kintone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F37B6C173A3E5E00CB97D9 /* Debug */,
+				F1F37B6D173A3E5E00CB97D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F37B6E173A3E5E00CB97D9 /* Build configuration list for PBXNativeTarget "sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F37B6F173A3E5E00CB97D9 /* Debug */,
+				F1F37B70173A3E5E00CB97D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F37BA3173A46D000CB97D9 /* Build configuration list for PBXAggregateTarget "kintone.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F37BA4173A46D000CB97D9 /* Debug */,
+				F1F37BA5173A46D000CB97D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1F37B58173A3E5E00CB97D9 /* Project object */;
+}

@@ -1,0 +1,1230 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CBLog Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">kintone SDK for iOS </a></h1>
+				<a id="developerHome" href="../index.html">Cybozu</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CBLog Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/logError:">&nbsp;&nbsp;&nbsp;&nbsp;+ logError:</option>
+	
+	<option value="//api/name/logInfo:">&nbsp;&nbsp;&nbsp;&nbsp;+ logInfo:</option>
+	
+	<option value="//api/name/logLevel">&nbsp;&nbsp;&nbsp;&nbsp;+ logLevel</option>
+	
+	<option value="//api/name/logVerbose:">&nbsp;&nbsp;&nbsp;&nbsp;+ logVerbose:</option>
+	
+	<option value="//api/name/logWarn:">&nbsp;&nbsp;&nbsp;&nbsp;+ logWarn:</option>
+	
+	<option value="//api/name/removeFileLogger">&nbsp;&nbsp;&nbsp;&nbsp;+ removeFileLogger</option>
+	
+	<option value="//api/name/sdkLogError:">&nbsp;&nbsp;&nbsp;&nbsp;+ sdkLogError:</option>
+	
+	<option value="//api/name/sdkLogInfo:">&nbsp;&nbsp;&nbsp;&nbsp;+ sdkLogInfo:</option>
+	
+	<option value="//api/name/sdkLogLevel">&nbsp;&nbsp;&nbsp;&nbsp;+ sdkLogLevel</option>
+	
+	<option value="//api/name/sdkLogVerbose:">&nbsp;&nbsp;&nbsp;&nbsp;+ sdkLogVerbose:</option>
+	
+	<option value="//api/name/sdkLogWarn:">&nbsp;&nbsp;&nbsp;&nbsp;+ sdkLogWarn:</option>
+	
+	<option value="//api/name/setFileLogger:">&nbsp;&nbsp;&nbsp;&nbsp;+ setFileLogger:</option>
+	
+	<option value="//api/name/setLogLevel:">&nbsp;&nbsp;&nbsp;&nbsp;+ setLogLevel:</option>
+	
+	<option value="//api/name/setSdkLogLevel:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSdkLogLevel:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_FileLogger">FileLogger</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ログレベル">ログレベル</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SDK 向けログの出力">SDK 向けログの出力</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_アプリケーション向けログの出力">アプリケーション向けログの出力</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logError:">logError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logInfo:">logInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logLevel">logLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logVerbose:">logVerbose:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logWarn:">logWarn:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFileLogger">removeFileLogger</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sdkLogError:">sdkLogError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sdkLogInfo:">sdkLogInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sdkLogLevel">sdkLogLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sdkLogVerbose:">sdkLogVerbose:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sdkLogWarn:">sdkLogWarn:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFileLogger:">setFileLogger:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLogLevel:">setLogLevel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSdkLogLevel:">setSdkLogLevel:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CBLog Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CBLog Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CBLog.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ログクラスです。</p>
+
+<p>本クラスで出力されるログは Xcode のコンソールに出力されます。<a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> をセットすることにより、ログファイルへの出力が可能となります。</p>
+
+<h2>ログレベル</h2>
+
+<p>アプリケーション向けのログレベル、SDK 向けのログレベルの 2 種類が存在します。<br/>
+本 SDK を利用したアプリケーションのログレベルを制御したい場合は <code>CBLogLevel</code>、SDK 向けのログレベルを制御したい場合は <code>CBSdkLogLevel</code> を使用することを想定しています。</p>
+
+<p>アプリケーション向けのログレベルの定義:</p>
+
+<pre><code>typedef NS_OPTIONS(NSUInteger, CBLogFlag) {  
+    CBLogFlagError      = 1 &lt;&lt; 4,  
+    CBLogFlagWarn       = 1 &lt;&lt; 5,  
+    CBLogFlagInfo       = 1 &lt;&lt; 6,  
+    CBLogFlagVerbose    = 1 &lt;&lt; 7  
+};  
+
+typedef NS_ENUM(NSUInteger, CBLogLevel) {  
+    CBLogLevelOff     = 0,  
+    CBLogLevelError   = CBLogFlagError,  
+    CBLogLevelWarn    = CBLogLevelError | CBLogFlagWarn,  
+    CBLogLevelInfo    = CBLogLevelWarn  | CBLogFlagInfo,  
+    CBLogLevelVerbose = CBLogLevelInfo  | CBLogFlagVerbose  
+};  
+</code></pre>
+
+<p>SDK 向けのログレベルの定義:</p>
+
+<pre><code>typedef NS_OPTIONS(NSUInteger, CBSdkLogFlag) {  
+    CBSdkLogFlagError   = 1 &lt;&lt; 0,  
+    CBSdkLogFlagWarn    = 1 &lt;&lt; 1,  
+    CBSdkLogFlagInfo    = 1 &lt;&lt; 2,  
+    CBSdkLogFlagVerbose = 1 &lt;&lt; 3  
+};  
+
+typedef NS_ENUM(NSUInteger, CBSdkLogLevel) {  
+    CBSdkLogLevelOff     = 0,  
+    CBSdkLogLevelError   = CBSdkLogFlagError,  
+    CBSdkLogLevelWarn    = CBSdkLogLevelError | CBSdkLogFlagWarn,  
+    CBSdkLogLevelInfo    = CBSdkLogLevelWarn  | CBSdkLogFlagInfo,  
+    CBSdkLogLevelVerbose = CBSdkLogLevelInfo  | CBSdkLogFlagVerbose  
+};
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="FileLogger" name="task_FileLogger"></a>
+						<h3 class="subsubtitle task-title">FileLogger</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFileLogger:">+&nbsp;setFileLogger:</a></code>
+		<span class="tooltip"><p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> をセットします。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFileLogger">+&nbsp;removeFileLogger</a></code>
+		<span class="tooltip"><p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> を削除します。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ログレベル" name="task_ログレベル"></a>
+						<h3 class="subsubtitle task-title">ログレベル</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sdkLogLevel">+&nbsp;sdkLogLevel</a></code>
+		<span class="tooltip"><p>SDK 向けのログレベルを取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSdkLogLevel:">+&nbsp;setSdkLogLevel:</a></code>
+		<span class="tooltip"><p>SDK 向けのログレベルをセットします。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logLevel">+&nbsp;logLevel</a></code>
+		<span class="tooltip"><p>アプリケーション向けのログレベルを取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLogLevel:">+&nbsp;setLogLevel:</a></code>
+		<span class="tooltip"><p>アプリケーション向けのログレベルをセットします。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="SDK 向けログの出力" name="task_SDK 向けログの出力"></a>
+						<h3 class="subsubtitle task-title">SDK 向けログの出力</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sdkLogError:">+&nbsp;sdkLogError:</a></code>
+		<span class="tooltip"><p>SDK 向けエラーログです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sdkLogWarn:">+&nbsp;sdkLogWarn:</a></code>
+		<span class="tooltip"><p>SDK 向けワーニングログです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sdkLogInfo:">+&nbsp;sdkLogInfo:</a></code>
+		<span class="tooltip"><p>SDK 向けインフォログです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sdkLogVerbose:">+&nbsp;sdkLogVerbose:</a></code>
+		<span class="tooltip"><p>SDK 向け verbose ログです。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="アプリケーション向けログの出力" name="task_アプリケーション向けログの出力"></a>
+						<h3 class="subsubtitle task-title">アプリケーション向けログの出力</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logError:">+&nbsp;logError:</a></code>
+		<span class="tooltip"><p>アプリケーション向けエラーログです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logWarn:">+&nbsp;logWarn:</a></code>
+		<span class="tooltip"><p>アプリケーション向けワーニングログです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logInfo:">+&nbsp;logInfo:</a></code>
+		<span class="tooltip"><p>アプリケーション向けインフォログです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logVerbose:">+&nbsp;logVerbose:</a></code>
+		<span class="tooltip"><p>アプリケーション向け verbose ログです。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/logError:" title="logError:"></a>
+	<h3 class="subsubtitle method-title">logError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>アプリケーション向けエラーログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logError:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>アプリケーション向けエラーログです。</p>
+
+<p>アプリケーション向けログレベルが <code>CBLogLevelError</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logInfo:" title="logInfo:"></a>
+	<h3 class="subsubtitle method-title">logInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>アプリケーション向けインフォログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logInfo:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>アプリケーション向けインフォログです。</p>
+
+<p>アプリケーション向けログレベルが <code>CBLogLevelInfo</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logLevel" title="logLevel"></a>
+	<h3 class="subsubtitle method-title">logLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>アプリケーション向けのログレベルを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CBLogLevel)logLevel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>アプリケーション向けのログレベルを取得します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logVerbose:" title="logVerbose:"></a>
+	<h3 class="subsubtitle method-title">logVerbose:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>アプリケーション向け verbose ログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logVerbose:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>アプリケーション向け verbose ログです。</p>
+
+<p>アプリケーション向けログレベルが <code>CBLogLevelVerbose</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logWarn:" title="logWarn:"></a>
+	<h3 class="subsubtitle method-title">logWarn:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>アプリケーション向けワーニングログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)logWarn:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>アプリケーション向けワーニングログです。</p>
+
+<p>アプリケーション向けログレベルが <code>CBLogLevelWarn</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFileLogger" title="removeFileLogger"></a>
+	<h3 class="subsubtitle method-title">removeFileLogger</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> を削除します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)removeFileLogger</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> を削除します。</p>
+
+<p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> を削除すると、削除した時点からのログがファイルに出力されません。既存のログファイルは維持されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sdkLogError:" title="sdkLogError:"></a>
+	<h3 class="subsubtitle method-title">sdkLogError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>SDK 向けエラーログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sdkLogError:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>SDK 向けエラーログです。</p>
+
+<p>SDK 向けログレベルが <code>CBSdkLogLevelError</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sdkLogInfo:" title="sdkLogInfo:"></a>
+	<h3 class="subsubtitle method-title">sdkLogInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>SDK 向けインフォログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sdkLogInfo:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>SDK 向けインフォログです。</p>
+
+<p>SDK 向けログレベルが <code>CBSdkLogLevelInfo</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sdkLogLevel" title="sdkLogLevel"></a>
+	<h3 class="subsubtitle method-title">sdkLogLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>SDK 向けのログレベルを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CBSdkLogLevel)sdkLogLevel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>SDK 向けのログレベルを取得します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sdkLogVerbose:" title="sdkLogVerbose:"></a>
+	<h3 class="subsubtitle method-title">sdkLogVerbose:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>SDK 向け verbose ログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sdkLogVerbose:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>SDK 向け verbose ログです。</p>
+
+<p>SDK 向けログレベルが <code>CBSdkLogLevelVerbose</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sdkLogWarn:" title="sdkLogWarn:"></a>
+	<h3 class="subsubtitle method-title">sdkLogWarn:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>SDK 向けワーニングログです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sdkLogWarn:(NSString *)<em>format</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>format</em></dt>
+			<dd><p>エラーフォーマット</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p>フォーマット引数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>SDK 向けワーニングログです。</p>
+
+<p>SDK 向けログレベルが <code>CBSdkLogLevelWarn</code> で出力されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFileLogger:" title="setFileLogger:"></a>
+	<h3 class="subsubtitle method-title">setFileLogger:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> をセットします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setFileLogger:(CBFileLogger *)<em>fileLogger</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileLogger</em></dt>
+			<dd><p>セットする <a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> をセットします。</p>
+
+<p><a href="../Classes/CBFileLogger.html"><code>CBFileLogger</code></a> をセットすると、セットした時点からのログがファイルにも出力されるようになります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLogLevel:" title="setLogLevel:"></a>
+	<h3 class="subsubtitle method-title">setLogLevel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>アプリケーション向けのログレベルをセットします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setLogLevel:(CBLogLevel)<em>logLevel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>logLevel</em></dt>
+			<dd><p>アプリケーション向けログレベル</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>アプリケーション向けのログレベルをセットします。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSdkLogLevel:" title="setSdkLogLevel:"></a>
+	<h3 class="subsubtitle method-title">setSdkLogLevel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>SDK 向けのログレベルをセットします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setSdkLogLevel:(CBSdkLogLevel)<em>sdkLogLevel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sdkLogLevel</em></dt>
+			<dd><p>SDK 向けログレベル</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>SDK 向けのログレベルをセットします。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBLog.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cybozu. All rights reserved. (Last updated: 2013-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

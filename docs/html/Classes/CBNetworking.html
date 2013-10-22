@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CBNetworking Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">kintone SDK for iOS </a></h1>
+				<a id="developerHome" href="../index.html">Cybozu</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CBNetworking Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sendRequestForDownload:credential:success:failure:download:output:queue:">&nbsp;&nbsp;&nbsp;&nbsp;+ sendRequestForDownload:credential:success:failure:download:output:queue:</option>
+	
+	<option value="//api/name/sendRequestForJSONResponse:credential:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;+ sendRequestForJSONResponse:credential:success:failure:queue:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendRequestForDownload:credential:success:failure:download:output:queue:">sendRequestForDownload:credential:success:failure:download:output:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendRequestForJSONResponse:credential:success:failure:queue:">sendRequestForJSONResponse:credential:success:failure:queue:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CBNetworking Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CBNetworking Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CBNetworking.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>非同期での HTTP 通信を行うクラスです。</p>
+
+<p>json でのレスポンス、バイナリデータでのレスポンスに特化したメソッドを提供します。リクエスト時の認証は &lsquo;CBCredential&rsquo; を渡すことにより自動的に行われます。引数として指定した <code>NSOperationQueue</code> を管理することにより、処理の一括キャンセル等が可能となります。レスポンス受信後の処理は、Block で指定します。成功時、失敗時の Block を指定し、状況に応じた処理を Block 中に記述することが可能です。レスポンスステータスが 200 の場合は成功レスポンス、それ以外の場合は失敗レスポンスとして、各 Block が実行されます。</p>
+
+<p>通信中は、iOS デバイス上のステータスバーに indicator が表示されます。indicator は通信中のみ表示され、成功/失敗時の Block 処理では indicator は動作しません。</p>
+
+<h2>利用される Block の型</h2>
+
+<p>型宣言された Block:</p>
+
+<pre><code>// json での成功レスポンス用 Block  
+typedef void (^CBNetworkingSuccessBlockForJSONResponse)(NSURLRequest *request, NSHTTPURLResponse *response, id JSON);  
+// json での失敗レスポンス用 Block  
+typedef void (^CBNetworkingFailureBlockForJSONResponse)(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON);  
+// 一般的な HTTP 成功レスポンス用 Block  
+typedef void (^CBNetworkingSuccessBlockForHTTPResponse)(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject);  
+// 一般的な HTTP 失敗レスポンス用 Block  
+typedef void (^CBNetworkingFailureBlockForHTTPResponse)(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error);  
+// ダウンロードの進捗を管理する Block  
+typedef void (^CBNetworkingDownloadProgressBlock)(NSUInteger bytesRead , long long totalBytesRead , long long totalBytesExpectedToRead);  
+// アップロードの進捗を管理する Block  
+typedef void (^CBNetworkingUploadProgressBlock)(NSUInteger bytesWritten , long long totalBytesWritten , long long totalBytesExpectedToWrite);  
+</code></pre>
+
+<h2>エラー</h2>
+
+<p>レスポンスステータス 401 は BASIC 認証エラーとして解釈され、C_ERROR_00003 の &lsquo;CBError&rsquo; を返します。cybozu.com の返す json 形式のエラーの場合、エラーコードを json レスポンスの code、message を recoverySuggestion として &lsquo;CBError&rsquo; を返します。それ以外のエラーの場合、<code>NSError</code> をラップした形で <a href="../Classes/CBError.html"><code>CBError</code></a> が返されます。</p>
+
+<h2>ログ</h2>
+
+<p>リクエスト、レスポンスのログは、<code>CBSdkLogLevelVerbose' レベルで出力されます。リクエストヘッダの</code>X-Cybozu-Authorization` 値、レスポンスヘッダで Set-Cookie される JSESSIONID、CB_OPENAUTH は &lsquo;*****&rsquo; で伏せた状態で出力されます。</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendRequestForJSONResponse:credential:success:failure:queue:">+&nbsp;sendRequestForJSONResponse:credential:success:failure:queue:</a></code>
+		<span class="tooltip"><p>json レスポンスを受け取ることを想定した HTTP リクエストメソッドです。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendRequestForDownload:credential:success:failure:download:output:queue:">+&nbsp;sendRequestForDownload:credential:success:failure:download:output:queue:</a></code>
+		<span class="tooltip"><p>バイナリデータダウンロードを想定した HTTP リクエストメソッドです。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sendRequestForDownload:credential:success:failure:download:output:queue:" title="sendRequestForDownload:credential:success:failure:download:output:queue:"></a>
+	<h3 class="subsubtitle method-title">sendRequestForDownload:credential:success:failure:download:output:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>バイナリデータダウンロードを想定した HTTP リクエストメソッドです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sendRequestForDownload:(NSURLRequest *)<em>request</em> credential:(CBCredential *)<em>credential</em> success:(CBNetworkingSuccessBlockForHTTPResponse)<em>success</em> failure:(CBNetworkingFailureBlockForHTTPResponse)<em>failure</em> download:(CBNetworkingDownloadProgressBlock)<em>download</em> output:(NSOutputStream *)<em>output</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>リクエスト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>credential</em></dt>
+			<dd><p>認証情報</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>download</em></dt>
+			<dd><p>ダウンロードの進捗を管理する block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>output</em></dt>
+			<dd><p>ダウンロードしたデータを処理する &lsquo;NSOutputStream'。ダウンロードしたデータの保存はこの引数で管理します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>バイナリデータダウンロードを想定した HTTP リクエストメソッドです。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendRequestForJSONResponse:credential:success:failure:queue:" title="sendRequestForJSONResponse:credential:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">sendRequestForJSONResponse:credential:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>json レスポンスを受け取ることを想定した HTTP リクエストメソッドです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sendRequestForJSONResponse:(NSURLRequest *)<em>request</em> credential:(CBCredential *)<em>credential</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>リクエスト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>credential</em></dt>
+			<dd><p>認証情報</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>json レスポンスを受け取ることを想定した HTTP リクエストメソッドです。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CBNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cybozu. All rights reserved. (Last updated: 2013-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,2139 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KintoneAPI Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">kintone SDK for iOS </a></h1>
+				<a id="developerHome" href="../index.html">Cybozu</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KintoneAPI Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/kintoneApplication">&nbsp;&nbsp;&nbsp;&nbsp;kintoneApplication</option>
+	
+	<option value="//api/name/userAgent">&nbsp;&nbsp;&nbsp;&nbsp;userAgent</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/bulkDelete:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- bulkDelete:success:failure:queue:</option>
+	
+	<option value="//api/name/bulkDeleteWithRecords:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- bulkDeleteWithRecords:success:failure:queue:</option>
+	
+	<option value="//api/name/bulkInsert:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- bulkInsert:success:failure:queue:</option>
+	
+	<option value="//api/name/bulkInsertWithRecords:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- bulkInsertWithRecords:success:failure:queue:</option>
+	
+	<option value="//api/name/bulkUpdate:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- bulkUpdate:success:failure:queue:</option>
+	
+	<option value="//api/name/bulkUpdateWithRecords:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- bulkUpdateWithRecords:success:failure:queue:</option>
+	
+	<option value="//api/name/fileDownload:success:failure:download:output:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- fileDownload:success:failure:download:output:queue:</option>
+	
+	<option value="//api/name/fileUpload:fileName:contentType:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- fileUpload:fileName:contentType:success:failure:queue:</option>
+	
+	<option value="//api/name/fileUploadWithFile:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- fileUploadWithFile:success:failure:queue:</option>
+	
+	<option value="//api/name/form:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- form:failure:queue:</option>
+	
+	<option value="//api/name/insert:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- insert:success:failure:queue:</option>
+	
+	<option value="//api/name/insertWithRecord:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- insertWithRecord:success:failure:queue:</option>
+	
+	<option value="//api/name/record:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- record:success:failure:queue:</option>
+	
+	<option value="//api/name/records:query:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- records:query:success:failure:queue:</option>
+	
+	<option value="//api/name/recordsWithFields:kintoneQuery:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- recordsWithFields:kintoneQuery:success:failure:queue:</option>
+	
+	<option value="//api/name/recordsWithFields:query:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- recordsWithFields:query:success:failure:queue:</option>
+	
+	<option value="//api/name/update:fieldJSON:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- update:fieldJSON:success:failure:queue:</option>
+	
+	<option value="//api/name/update:record:success:failure:queue:">&nbsp;&nbsp;&nbsp;&nbsp;- update:record:success:failure:queue:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_プロパティ">プロパティ</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_APIs">APIs</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kintoneApplication">kintoneApplication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userAgent">userAgent</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bulkDelete:success:failure:queue:">bulkDelete:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bulkDeleteWithRecords:success:failure:queue:">bulkDeleteWithRecords:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bulkInsert:success:failure:queue:">bulkInsert:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bulkInsertWithRecords:success:failure:queue:">bulkInsertWithRecords:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bulkUpdate:success:failure:queue:">bulkUpdate:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bulkUpdateWithRecords:success:failure:queue:">bulkUpdateWithRecords:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileDownload:success:failure:download:output:queue:">fileDownload:success:failure:download:output:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileUpload:fileName:contentType:success:failure:queue:">fileUpload:fileName:contentType:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileUploadWithFile:success:failure:queue:">fileUploadWithFile:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/form:failure:queue:">form:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insert:success:failure:queue:">insert:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertWithRecord:success:failure:queue:">insertWithRecord:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/record:success:failure:queue:">record:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/records:query:success:failure:queue:">records:query:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordsWithFields:kintoneQuery:success:failure:queue:">recordsWithFields:kintoneQuery:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recordsWithFields:query:success:failure:queue:">recordsWithFields:query:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/update:fieldJSON:success:failure:queue:">update:fieldJSON:success:failure:queue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/update:record:success:failure:queue:">update:record:success:failure:queue:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KintoneAPI Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KintoneAPI Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KintoneAPI.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>kintone の API をコールするクラスです。</p>
+
+<p>内部で <a href="../Classes/CBNetworking.html"><code>CBNetworking</code></a> を呼び出します。<code>success</code>, <code>failure</code> Block、エラー、ログ等については <a href="../Classes/CBNetworking.html"><code>CBNetworking</code></a> を参照してください。</p>
+
+<h2>API の呼び出し</h2>
+
+<p>API は非同期で動作します。block により成功レスポンス/失敗レスポンス後の処理を記述できます。</p>
+
+<p>例:</p>
+
+<pre><code>CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+    [CBLog logVerbose:@"success"];  
+};  
+CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+    [CBLog logVerbose:@"failure"];  
+
+    // show error dialog if failure  
+    UIAlertView *alert = [error alertView];  
+    [alert show];  
+};  
+
+[kintoneApplication.kintoneAPI record:1 success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];  
+</code></pre>
+
+<h2>NSOperationQueue による API 呼び出しの直列化</h2>
+
+<p>ファイルのダウンロード、アップロードを行うような場合、複数の API を直列に実行することになります。<code>KintoneAPI</code> では複数の API の呼び出しをまとめる <code>NSOperationQueue</code> を引数として渡すようにしています。kintone SDK では、同時実行 operation 数を 1 にし、確実に１つずつの operation しか動作しないシングルトンの queue を <a href="../Classes/CBOperationQueue.html#//api/name/sharedNonConcurrentQueue">[CBOperationQueue sharedNonConcurrentQueue]</a> として用意しています。この queue を利用することにより、複数の API を直列に実行することが可能となります。</p>
+
+<p>但し、API 成功/失敗レスポンス後に動作する success / failure Block はこの queue とは独立して動作します。これら Block の処理の完了後に次の API を呼び出したい場合、Block の中で次の API を呼び出すことにより、連続した処理が可能となります。<a href="#//api/name/fileDownload:success:failure:download:output:queue:"><code>fileDownload:success:failure:download:output:queue:</code></a> に実装例があるので、参考にしてください。</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="プロパティ" name="task_プロパティ"></a>
+						<h3 class="subsubtitle task-title">プロパティ</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/kintoneApplication">&nbsp;&nbsp;kintoneApplication</a></code>
+		<span class="tooltip"><p>紐付けられた kintone アプリです。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userAgent">&nbsp;&nbsp;userAgent</a></code>
+		<span class="tooltip"><p>API コール時に利用する User-Agent です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="APIs" name="task_APIs"></a>
+						<h3 class="subsubtitle task-title">APIs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/form:failure:queue:">&ndash;&nbsp;form:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリのフォーム情報を取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/record:success:failure:queue:">&ndash;&nbsp;record:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリの指定したレコード番号のデータを取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/records:query:success:failure:queue:">&ndash;&nbsp;records:query:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリからレコードを一括取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordsWithFields:query:success:failure:queue:">&ndash;&nbsp;recordsWithFields:query:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリからレコードを一括取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recordsWithFields:kintoneQuery:success:failure:queue:">&ndash;&nbsp;recordsWithFields:kintoneQuery:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリからレコードを一括取得します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insert:success:failure:queue:">&ndash;&nbsp;insert:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリへレコードを登録します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertWithRecord:success:failure:queue:">&ndash;&nbsp;insertWithRecord:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリへレコードを登録します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bulkInsert:success:failure:queue:">&ndash;&nbsp;bulkInsert:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリへレコードを一括登録します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bulkInsertWithRecords:success:failure:queue:">&ndash;&nbsp;bulkInsertWithRecords:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリへレコードを一括登録します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/update:fieldJSON:success:failure:queue:">&ndash;&nbsp;update:fieldJSON:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリの指定されたレコードを更新します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/update:record:success:failure:queue:">&ndash;&nbsp;update:record:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリの指定されたレコードを更新します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bulkUpdate:success:failure:queue:">&ndash;&nbsp;bulkUpdate:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリの指定されたレコードを一括更新します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bulkUpdateWithRecords:success:failure:queue:">&ndash;&nbsp;bulkUpdateWithRecords:success:failure:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリの指定されたレコードを一括更新します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bulkDelete:success:failure:queue:">&ndash;&nbsp;bulkDelete:success:failure:queue:</a></code>
+		<span class="tooltip"><p>指定されたレコードを kintone アプリより一括削除します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bulkDeleteWithRecords:success:failure:queue:">&ndash;&nbsp;bulkDeleteWithRecords:success:failure:queue:</a></code>
+		<span class="tooltip"><p>指定されたレコードを kintone アプリより一括削除します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileDownload:success:failure:download:output:queue:">&ndash;&nbsp;fileDownload:success:failure:download:output:queue:</a></code>
+		<span class="tooltip"><p>kintone アプリ上の指定されたファイルをダウンロードします。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileUpload:fileName:contentType:success:failure:queue:">&ndash;&nbsp;fileUpload:fileName:contentType:success:failure:queue:</a></code>
+		<span class="tooltip"><p>ファイルを kintone アプリへアップロードします。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileUploadWithFile:success:failure:queue:">&ndash;&nbsp;fileUploadWithFile:success:failure:queue:</a></code>
+		<span class="tooltip"><p>ファイルを kintone アプリへアップロードします。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/kintoneApplication" title="kintoneApplication"></a>
+	<h3 class="subsubtitle method-title">kintoneApplication</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>紐付けられた kintone アプリです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, readonly) KintoneApplication *kintoneApplication</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>紐付けられた kintone アプリです。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userAgent" title="userAgent"></a>
+	<h3 class="subsubtitle method-title">userAgent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>API コール時に利用する User-Agent です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *userAgent</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>API コール時に利用する User-Agent です。</p>
+
+<p>User-Agent のデフォルトフォーマット:</p>
+
+<pre><code>&lt;UIWebView User-Agent&gt; + " kintoneSDK/" + &lt;kintone SDK バージョン&gt; + " " + &lt;bundle 名&gt; + "/" + &lt;bundle バージョン&gt;  
+
+// 例  
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A403 kintoneSDK/1.0.0 sample/1.0.0  
+</code></pre>
+
+<p>User-Agent が指定された場合のフォーマット:</p>
+
+<pre><code>&lt;UIWebView User-Agent&gt; + " kintoneSDK/" + &lt;kintone SDK バージョン&gt; + " " + &lt;指定された userAgent&gt;  
+
+// 例  
+kintoneAPI.userAgent = @"sample";  
+
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A403 kintoneSDK/1.0.0 sample
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bulkDelete:success:failure:queue:" title="bulkDelete:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">bulkDelete:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定されたレコードを kintone アプリより一括削除します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)bulkDelete:(NSArray *)<em>recordIds</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordIds</em></dt>
+			<dd><p>削除対象のレコード番号 &lsquo;NSNumber&rsquo;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>指定されたレコードを kintone アプリより一括削除します。</p>
+
+<p>削除対象をレコード番号を <code>NSArray</code> として指定する点を除き、<a href="#//api/name/bulkDeleteWithRecords:success:failure:queue:"><code>bulkDeleteWithRecords:success:failure:queue:</code></a> と同様です。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bulkDeleteWithRecords:success:failure:queue:" title="bulkDeleteWithRecords:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">bulkDeleteWithRecords:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定されたレコードを kintone アプリより一括削除します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)bulkDeleteWithRecords:(NSArray *)<em>records</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>records</em></dt>
+			<dd><p>削除対象のレコード番号フィールド <a href="../Classes/KintoneRecordNumberField.html"><code>KintoneRecordNumberField</code></a> がセットされた <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>指定されたレコードを kintone アプリより一括削除します。</p>
+
+<p><a href="#//api/name/bulkUpdateWithRecords:success:failure:queue:"><code>bulkUpdateWithRecords:success:failure:queue:</code></a> と同様に、レコード番号の <a href="../Classes/KintoneField.html"><code>KintoneField</code></a> をセットした <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> を指定します。</p>
+
+<p>例:</p>
+
+<pre><code>// KintoneRecordNumberField を生成  
+NSDictionary *properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneRecordNumberFieldType],  
+                             @"code" : @"Record_number"};  
+KintoneField *field1 = [[KintoneField alloc] initWithProperties:properties];  
+// レコード番号 1 をセット  
+BOOL ret1 = [field1 setValue:@1 error:nil];  
+KintoneField *field2 = [[KintoneField alloc] initWithProperties:properties];  
+// レコード番号 2 をセット  
+BOOL ret2 = [field2 setValue:@2 error:nil];  
+
+if (ret1 &amp;&amp; ret2) {  
+    // KintoneRecordNumberField を KintoneRecord にセット  
+    KintoneRecord *record1 = [KintoneRecord new];  
+    [record1 addField:field1];  
+
+    KintoneRecord *record2 = [KintoneRecord new];  
+    [record2 addField:field2];  
+
+    CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+        //  
+    };  
+    CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+        //  
+    };  
+
+    [kintoneApplication.kintoneAPI bulkDeleteWithRecords:@[record1, record2] success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];  
+}
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bulkInsert:success:failure:queue:" title="bulkInsert:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">bulkInsert:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリへレコードを一括登録します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)bulkInsert:(NSArray *)<em>fieldJSON</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldJSON</em></dt>
+			<dd><p>json 形式の登録レコード</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリへレコードを一括登録します。</p>
+
+<p><a href="#//api/name/insert:success:failure:queue:"><code>insert:success:failure:queue:</code></a> とほぼ同等です。登録するレコードを json 形式の <code>NSArray</code> として指定します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bulkInsertWithRecords:success:failure:queue:" title="bulkInsertWithRecords:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">bulkInsertWithRecords:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリへレコードを一括登録します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)bulkInsertWithRecords:(NSArray *)<em>records</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>records</em></dt>
+			<dd><p><a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> 形式の登録レコード</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリへレコードを一括登録します。</p>
+
+<p><a href="#//api/name/insertWithRecord:success:failure:queue:"><code>insertWithRecord:success:failure:queue:</code></a> とほぼ同等です。登録するレコードを <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> の <code>NSArray</code> として指定します。</p>
+
+<p>例:</p>
+
+<pre><code>[kintoneApplication.kintoneAPI bulkInsertWithRecords:@[record1, record2] success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bulkUpdate:success:failure:queue:" title="bulkUpdate:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">bulkUpdate:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリの指定されたレコードを一括更新します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)bulkUpdate:(NSArray *)<em>fieldJSON</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldJSON</em></dt>
+			<dd><p>更新対象のレコード番号が含まれた json 形式データ</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリの指定されたレコードを一括更新します。</p>
+
+<p><a href="#//api/name/update:fieldJSON:success:failure:queue:"><code>update:fieldJSON:success:failure:queue:</code></a> とほぼ同様です。更新する <code>fieldJSON</code> にレコード番号を含めた json 形式のデータを指定する必要があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bulkUpdateWithRecords:success:failure:queue:" title="bulkUpdateWithRecords:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">bulkUpdateWithRecords:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリの指定されたレコードを一括更新します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)bulkUpdateWithRecords:(NSArray *)<em>records</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>records</em></dt>
+			<dd><p>更新対象のレコード番号フィールド <a href="../Classes/KintoneRecordNumberField.html"><code>KintoneRecordNumberField</code></a> がセットされた <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリの指定されたレコードを一括更新します。</p>
+
+<p><a href="#//api/name/update:record:success:failure:queue:"><code>update:record:success:failure:queue:</code></a> とほぼ同様です。更新する <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> にレコード番号の <a href="../Classes/KintoneField.html"><code>KintoneField</code></a> をセットした <code>NSArray</code> を指定する必要があります。</p>
+
+<p>例:</p>
+
+<pre><code>CBError* __autoreleasing error1 = nil;  
+NSDictionary *properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneSingleLineTextFieldType],  
+                             @"code" : @"Single_line_text"};  
+KintoneField *field1 = [[KintoneField alloc] initWithProperties:properties];  
+BOOL ret1 = [field1 setValue:@"bulk update" error:&amp;error1];  
+// KintoneRecordNumberField の生成  
+properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneRecordNumberFieldType],  
+               @"code" : @"Record_number"};  
+KintoneField *field2 = [[KintoneField alloc] initWithProperties:properties];  
+BOOL ret2 = [field2 setValue:@1 error:&amp;error1];  
+KintoneField *field3 = [[KintoneField alloc] initWithProperties:properties];  
+BOOL ret3 = [field3 setValue:@2 error:&amp;error1];  
+
+if (ret1 &amp;&amp; ret2 &amp;&amp; ret3) {  
+    KintoneRecord *record1 = [KintoneRecord new];  
+    [record1 addField:field1];  
+    [record1 addField:field2];  
+
+    KintoneRecord *record2 = [KintoneRecord new];  
+    [record2 addField:field1];  
+    [record2 addField:field3];  
+
+    CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+        //  
+    };  
+    CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+        //  
+    };  
+
+    [kintoneApplication.kintoneAPI bulkUpdateWithRecords:@[record1, record2] success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];  
+}
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileDownload:success:failure:download:output:queue:" title="fileDownload:success:failure:download:output:queue:"></a>
+	<h3 class="subsubtitle method-title">fileDownload:success:failure:download:output:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリ上の指定されたファイルをダウンロードします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fileDownload:(NSString *)<em>fileKey</em> success:(CBNetworkingSuccessBlockForHTTPResponse)<em>success</em> failure:(CBNetworkingFailureBlockForHTTPResponse)<em>failure</em> download:(CBNetworkingDownloadProgressBlock)<em>download</em> output:(NSOutputStream *)<em>output</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileKey</em></dt>
+			<dd><p>ダウンロードする fileKey</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>download</em></dt>
+			<dd><p>ダウンロードの進捗を管理する Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>output</em></dt>
+			<dd><p>ダウンロードしたデータを管理する <code>NSOutputStream</code></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリ上の指定されたファイルをダウンロードします。</p>
+
+<p>ファイルのダウンロードは、一旦レコードの取得等で入手した <code>fileKey</code> を指定することで可能となります。レコードの取得で生成された <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> より <code>[KintoneFileField value]</code> を取得すると、<a href="../Classes/KintoneFile.html"><code>KintoneFile</code></a> としてファイル情報を操作できるようになります。ダウンロードするファイルは、引数として渡す <code>NSOutputStream</code> でコントロールします。</p>
+
+<p>例:</p>
+
+<pre><code>CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+    KintoneRecord *record = [KintoneRecord kintoneRecordFromJSON:JSON];  
+
+    // attachment files  
+    KintoneField *field = (KintoneField *)record.fields[@"Attachment"];  
+    NSArray *files = (NSArray *)field.value;  
+
+    if (files &gt; 0) { // 添付ファイルあり  
+        KintoneFile *file = (KintoneFile *)files[0];  
+
+        // "Documents" 配下にダウンロードファイルを保存する  
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+        NSString *baseDir = ([paths count] &gt; 0) ? [paths objectAtIndex:0] : nil;  
+        NSString *downloadFile = [baseDir stringByAppendingPathComponent:file.name];  
+        NSOutputStream *output = [NSOutputStream outputStreamToFileAtPath:downloadFile append:NO];  
+
+        // ファイルダウンロードのレスポンスは json ではないため、block も別のものとなる  
+        CBNetworkingSuccessBlockForHTTPResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject) {  
+            //  
+        };  
+        CBNetworkingFailureBlockForHTTPResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error) {  
+            //  
+        };  
+
+        [kintoneApplication.kintoneAPI fileDownload:file.fileKey  
+                                            success:success  
+                                            failure:failure  
+                                           download:nil  
+                                             output:output  
+                                              queue:[CBOperationQueue sharedNonConcurrentQueue]];  
+    }  
+};  
+CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+    //  
+};  
+
+[kintoneApplication.kintoneAPI record:3 success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileUpload:fileName:contentType:success:failure:queue:" title="fileUpload:fileName:contentType:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">fileUpload:fileName:contentType:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ファイルを kintone アプリへアップロードします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fileUpload:(NSData *)<em>fileData</em> fileName:(NSString *)<em>fileName</em> contentType:(NSString *)<em>contentType</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileData</em></dt>
+			<dd><p>アップロードするファイルデータ</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>アップロードするファイル名</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentType</em></dt>
+			<dd><p>アップロードするファイルの mime type</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ファイルを kintone アプリへアップロードします。</p>
+
+<p><a href="#//api/name/fileUploadWithFile:success:failure:queue:"><code>fileUploadWithFile:success:failure:queue:</code></a> と同等です。<a href="../Classes/KintoneFile.html"><code>KintoneFile</code></a> に代わり、アップロードするファイルの情報を直接指定します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileUploadWithFile:success:failure:queue:" title="fileUploadWithFile:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">fileUploadWithFile:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ファイルを kintone アプリへアップロードします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fileUploadWithFile:(KintoneFile *)<em>file</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>file</em></dt>
+			<dd><p>アップロードファイルのデータがセットされた <a href="../Classes/KintoneFile.html"><code>KintoneFile</code></a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ファイルを kintone アプリへアップロードします。</p>
+
+<p>アップロードするデータをセットした <a href="../Classes/KintoneFile.html"><code>KintoneFile</code></a> を指定し、レスポンス <code>JSON</code> を <a href="../Classes/KintoneFile.html#//api/name/setFileKeyWithJSONDictionary:"><code>[KintoneFile setFileKeyWithJSONDictionary:]</code></a> に渡すことにより、<code>fileKey</code> のセットされた <a href="../Classes/KintoneFile.html"><code>KintoneFile</code></a> を取得できます。この <a href="../Classes/KintoneFile.html"><code>KintoneFile</code></a> をセットした <a href="../Classes/KintoneFileField.html"><code>KintoneFileField</code></a> を含む <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> を kintone アプリへ登録/更新することでファイルのアップロードが可能となります。</p>
+
+<p>例：</p>
+
+<pre><code>// "Documents/sample.png" をアップロード  
+NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+NSString *baseDir = ([paths count] &gt; 0) ? [paths objectAtIndex:0] : nil;  
+NSString *filePath = [baseDir stringByAppendingPathComponent:@"sample.png"];  
+NSData *data = UIImagePNGRepresentation([UIImage imageWithContentsOfFile:filePath]);  
+KintoneFile *file = [[KintoneFile alloc] initWithData:data name:@"sample.png" contentType:@"image/png"];  
+
+CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+    // fileKey を KintoneFile にセット  
+    [file setFileKeyWithJSONDictionary:JSON];  
+
+    NSDictionary *properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneFileFieldType],  
+                                 @"code" : @"Attachment"};  
+    KintoneFileField *field = [[KintoneFileField alloc] initWithProperties:properties];  
+    // file をフィールドに追加  
+    [field addFile:file];  
+    // アップロードするファイルが複数ある場合には、更に追加することが可能  
+    // [field addFile:file2];  
+
+    // KintoneFileField をセットした KintoneRecord を作成  
+    KintoneRecord *record = [KintoneRecord new];  
+    [record addField:field];  
+
+    // レコード登録、各 Block は省略  
+    [kintoneApplication.kintoneAPI insertWithRecord:record success:nil failure:nil queue:[CBOperationQueue sharedNonConcurrentQueue]];  
+};  
+CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+    //  
+};  
+
+[kintoneApplication.kintoneAPI fileUploadWithFile:file success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/form:failure:queue:" title="form:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">form:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリのフォーム情報を取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)form:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリのフォーム情報を取得します。</p>
+
+<p>取得したフォーム情報は <code>[KitoneField fieldsFromJSON:]</code> によりフィールドの code を key とし <a href="../Classes/KintoneField.html"><code>KintoneField</code></a> を値とした <code>NSDictionary</code> として取得できます。</p>
+
+<p>例:</p>
+
+<pre><code>CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+    NSDictionary *fields = [KintoneField fieldsFromJSON:JSON];  
+    [CBLog logVerbose:@"fields = %@", fields];  
+};  
+
+[kintoneApplication.kintoneAPI form:success failure:nil queue:[CBOperationQueue sharedNonConcurrentQueue]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insert:success:failure:queue:" title="insert:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">insert:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリへレコードを登録します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)insert:(NSDictionary *)<em>fieldJSON</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldJSON</em></dt>
+			<dd><p>json 形式の登録レコード</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリへレコードを登録します。</p>
+
+<p><code>fieldJSON</code> として json 形式の登録レコードを渡す点を除き、<a href="#//api/name/insertWithRecord:success:failure:queue:"><code>insertWithRecord:success:failure:queue:</code></a> と同等です。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertWithRecord:success:failure:queue:" title="insertWithRecord:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">insertWithRecord:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリへレコードを登録します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)insertWithRecord:(KintoneRecord *)<em>record</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>record</em></dt>
+			<dd><p>登録するレコード</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリへレコードを登録します。</p>
+
+<p>例:</p>
+
+<pre><code>// この例では新規に KintoneField インスタンスを作成していますが、KintoneRecord 等から KintoneField が取得できるようならそちらを利用するとよいです  
+// single line text field  
+CBError* __autoreleasing error1 = nil;  
+NSDictionary *properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneSingleLineTextFieldType],  
+                             @"code" : @"Single_line_text"};  
+KintoneField *field1 = [[KintoneField alloc] initWithProperties:properties];  
+// KintoneField へ setValue することにより、field の properties が正しくセットされているならセットした値の validation を実行できます  
+BOOL ret1 = [field1 setValue:@"test" error:&amp;error1];  
+
+// radio button field  
+CBError* __autoreleasing error2 = nil;  
+properties = @{@"type"    : [KintoneField fieldTypeNameForFieldType:KintoneRadioButtonFieldType],  
+               @"code"    : @"Single_choice",  
+               @"options" : @[@"sample1", @"sample2"]};  
+KintoneField *field2 = [[KintoneField alloc] initWithProperties:properties];  
+BOOL ret2 = [field2 setValue:@"sample2" error:&amp;error2];  
+
+if (ret1 &amp;&amp; ret2) {  
+    KintoneRecord *record = [KintoneRecord new];  
+    [record addField:field1];  
+    [record addField:field2];  
+
+    CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+        //  
+    };  
+    CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+        //  
+    };  
+
+    [kintoneApplication.kintoneAPI insertWithRecord:record success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];  
+}  
+else {  
+    // validation error  
+}
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/record:success:failure:queue:" title="record:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">record:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリの指定したレコード番号のデータを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)record:(int)<em>recordId</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordId</em></dt>
+			<dd><p>取得対象の kintone アプリレコード番号</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリの指定したレコード番号のデータを取得します。</p>
+
+<p>受信した json データは <a href="../Classes/KintoneRecord.html#//api/name/kintoneRecordFromJSON:"><code>[KintoneRecord kintoneRecordFromJSON:]</code></a> により <a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> オブジェクトとして取得できます。各フィールド値は <a href="../Classes/KintoneRecord.html#//api/name/fields"><code>[KintoneRecord fields]</code></a> にセットされた <a href="../Classes/KintoneField.html"><code>KintoneField</code></a> から取得できます。</p>
+
+<p>例:</p>
+
+<pre><code>CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+    KintoneRecord *record = [KintoneRecord kintoneRecordFromJSON:JSON];  
+    // 取得した全フィールドを表示  
+    for (id key in record.fields.keyEnumerator) {  
+        KintoneField *field = (KintoneField *)record.fields[key];  
+        [CBLog logVerbose:@"key = %@, value = %@", key, field.value];  
+    }  
+    // レコード番号を表示  
+    [CBLog logVerbose:@"record number = %@", record.recordNumber.value];  
+};  
+CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+    //  
+};  
+
+[kintoneApplication.kintoneAPI record:1 success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/records:query:success:failure:queue:" title="records:query:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">records:query:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリからレコードを一括取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)records:(NSArray *)<em>fields</em> query:(NSString *)<em>query</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>レスポンスとして取得したいフィールドコードを <code>NSString</code> として指定</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>検索クエリ文字列。<code>KintoneQueue kintoneQuery</code> より取得可能。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリからレコードを一括取得します。</p>
+
+<p><code>fields</code> としてフィールドコードの <code>NSArray</code> を渡す点を除き、<a href="#//api/name/recordsWithFields:query:success:failure:queue:"><code>recordsWithFields:query:success:failure:queue:</code></a> と同等です。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordsWithFields:kintoneQuery:success:failure:queue:" title="recordsWithFields:kintoneQuery:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">recordsWithFields:kintoneQuery:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリからレコードを一括取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)recordsWithFields:(NSArray *)<em>fields</em> kintoneQuery:(KintoneQuery *)<em>query</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>レスポンスとして取得したいフィールドを <a href="../Classes/KintoneField.html"><code>KintoneField</code></a> として指定</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>検索クエリ</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリからレコードを一括取得します。</p>
+
+<p>受信した json データは <a href="../Classes/KintoneRecord.html#//api/name/kintoneRecordsFromJSON:"><code>[KintoneRecord kintoneRecordsFromJSON:]</code></a> により、<a href="../Classes/KintoneRecord.html"><code>KintoneRecord</code></a> の <code>NSArray</code> として取得できます。</p>
+
+<p>例:</p>
+
+<pre><code>// single line text field  
+NSDictionary *properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneSingleLineTextFieldType],  
+                             @"code" : @"Single_line_text"};  
+KintoneField *field1 = [[KintoneField alloc] initWithProperties:properties];  
+// radio button field  
+properties = @{@"type" : [KintoneField fieldTypeNameForFieldType:KintoneRadioButtonFieldType],  
+               @"code" : @"Single_choice"};  
+KintoneField *field2 = [[KintoneField alloc] initWithProperties:properties];  
+
+// 以下の query を生成  
+// (Single_line_text = "test") and (Single_choice in ("sample2"))  
+KintoneQuery *q = [KintoneQuery new];  
+[q where:  
+    [q and:  
+        [q eq:field1 value:@"test"],  
+        [q in:field2 value:@[@"sample2"]], nil  
+    ]  
+];  
+[q limit:1];  
+[q offset:1];  
+
+CBNetworkingSuccessBlockForJSONResponse success = ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {  
+    NSArray *records = [KintoneRecord kintoneRecordsFromJSON:JSON];  
+};  
+CBNetworkingFailureBlockForJSONResponse failure = ^(NSURLRequest *request, NSHTTPURLResponse *response, CBError *error, id JSON) {  
+    //  
+};  
+
+[kintoneApplication.kintoneAPI recordsWithFields:@[field1] kintoneQuery:q success:success failure:failure queue:[CBOperationQueue sharedNonConcurrentQueue]];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recordsWithFields:query:success:failure:queue:" title="recordsWithFields:query:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">recordsWithFields:query:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリからレコードを一括取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)recordsWithFields:(NSArray *)<em>fields</em> query:(NSString *)<em>query</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>レスポンスとして取得したいフィールドを <a href="../Classes/KintoneField.html"><code>KintoneField</code></a> として指定</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>検索クエリ文字列。<code>[KintoneQueue kintoneQuery]</code> より取得可能。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリからレコードを一括取得します。</p>
+
+<p>queue を直接文字列で指定できることを除き、<a href="#//api/name/recordsWithFields:kintoneQuery:success:failure:queue:"><code>recordsWithFields:kintoneQuery:success:failure:queue:</code></a> と同等です。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/update:fieldJSON:success:failure:queue:" title="update:fieldJSON:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">update:fieldJSON:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリの指定されたレコードを更新します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)update:(int)<em>recordId</em> fieldJSON:(NSDictionary *)<em>fieldJSON</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordId</em></dt>
+			<dd><p>更新対象レコード番号</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldJSON</em></dt>
+			<dd><p>json 形式の登録レコード</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリの指定されたレコードを更新します。</p>
+
+<p>更新対象のレコード番号を指定する点を除き、<a href="#//api/name/insert:success:failure:queue:"><code>insert:success:failure:queue:</code></a> と同様です。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/update:record:success:failure:queue:" title="update:record:success:failure:queue:"></a>
+	<h3 class="subsubtitle method-title">update:record:success:failure:queue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリの指定されたレコードを更新します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)update:(int)<em>recordId</em> record:(KintoneRecord *)<em>record</em> success:(CBNetworkingSuccessBlockForJSONResponse)<em>success</em> failure:(CBNetworkingFailureBlockForJSONResponse)<em>failure</em> queue:(NSOperationQueue *)<em>queue</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>recordId</em></dt>
+			<dd><p>更新対象レコード番号</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>record</em></dt>
+			<dd><p>登録するレコード</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p>成功レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failure</em></dt>
+			<dd><p>失敗レスポンス時に実行される Block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>queue</em></dt>
+			<dd><p>リクエスト処理に利用される <code>NSOperationQueue</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリの指定されたレコードを更新します。</p>
+
+<p>更新対象のレコード番号を指定する点を除き、<a href="#//api/name/insertWithRecord:success:failure:queue:"><code>insertWithRecord:success:failure:queue:</code></a> と同等です。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cybozu. All rights reserved. (Last updated: 2013-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

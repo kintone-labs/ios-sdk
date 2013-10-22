@@ -1,0 +1,1499 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KintoneQuery Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">kintone SDK for iOS </a></h1>
+				<a id="developerHome" href="../index.html">Cybozu</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KintoneQuery Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/and:">&nbsp;&nbsp;&nbsp;&nbsp;- and:</option>
+	
+	<option value="//api/name/eq:value:">&nbsp;&nbsp;&nbsp;&nbsp;- eq:value:</option>
+	
+	<option value="//api/name/greaterThan:value:">&nbsp;&nbsp;&nbsp;&nbsp;- greaterThan:value:</option>
+	
+	<option value="//api/name/greaterThanOrEqual:value:">&nbsp;&nbsp;&nbsp;&nbsp;- greaterThanOrEqual:value:</option>
+	
+	<option value="//api/name/in:value:">&nbsp;&nbsp;&nbsp;&nbsp;- in:value:</option>
+	
+	<option value="//api/name/kintoneQuery">&nbsp;&nbsp;&nbsp;&nbsp;- kintoneQuery</option>
+	
+	<option value="//api/name/lessThan:value:">&nbsp;&nbsp;&nbsp;&nbsp;- lessThan:value:</option>
+	
+	<option value="//api/name/lessThanOrEqual:value:">&nbsp;&nbsp;&nbsp;&nbsp;- lessThanOrEqual:value:</option>
+	
+	<option value="//api/name/like:value:">&nbsp;&nbsp;&nbsp;&nbsp;- like:value:</option>
+	
+	<option value="//api/name/limit:">&nbsp;&nbsp;&nbsp;&nbsp;- limit:</option>
+	
+	<option value="//api/name/notEq:value:">&nbsp;&nbsp;&nbsp;&nbsp;- notEq:value:</option>
+	
+	<option value="//api/name/notIn:value:">&nbsp;&nbsp;&nbsp;&nbsp;- notIn:value:</option>
+	
+	<option value="//api/name/notLike:value:">&nbsp;&nbsp;&nbsp;&nbsp;- notLike:value:</option>
+	
+	<option value="//api/name/offset:">&nbsp;&nbsp;&nbsp;&nbsp;- offset:</option>
+	
+	<option value="//api/name/or:">&nbsp;&nbsp;&nbsp;&nbsp;- or:</option>
+	
+	<option value="//api/name/orderBy:asc:">&nbsp;&nbsp;&nbsp;&nbsp;- orderBy:asc:</option>
+	
+	<option value="//api/name/where:">&nbsp;&nbsp;&nbsp;&nbsp;- where:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_句">句</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_演算子">演算子</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_クエリ文字列">クエリ文字列</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/and:">and:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eq:value:">eq:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/greaterThan:value:">greaterThan:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/greaterThanOrEqual:value:">greaterThanOrEqual:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/in:value:">in:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kintoneQuery">kintoneQuery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lessThan:value:">lessThan:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lessThanOrEqual:value:">lessThanOrEqual:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/like:value:">like:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/limit:">limit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notEq:value:">notEq:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notIn:value:">notIn:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/notLike:value:">notLike:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/offset:">offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/or:">or:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orderBy:asc:">orderBy:asc:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/where:">where:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KintoneQuery Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KintoneQuery Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KintoneQuery.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>kintone アプリのレコード一括取得用クエリを生成するクラスです。</p>
+
+<h2>演算子の定義</h2>
+
+<pre><code>typedef NS_ENUM(NSUInteger, KintoneQueryOperatorType) {  
+    KintoneEqualQueryOperatorType              = NSEqualToPredicateOperatorType,              // =  
+    KintoneNotEqualQueryOperatorType           = NSNotEqualToPredicateOperatorType,           // !=  
+    KintoneGreaterThanQueryOperatorType        = NSGreaterThanPredicateOperatorType,          // &gt;  
+    KintoneLessThanQueryOperatorType           = NSLessThanPredicateOperatorType,             // &lt;  
+    KintoneGreaterThanOrEqualQueryOperatorType = NSGreaterThanOrEqualToPredicateOperatorType, // &gt;=  
+    KintoneLessThanOrEqualQueryOperatorType    = NSLessThanOrEqualToPredicateOperatorType,    // &lt;=  
+    KintoneInQueryOperatorType                 = NSInPredicateOperatorType,                   // in  
+    KintoneNotInQueryOperatorType              = 100,                                         // not in  
+    KintoneLikeQueryOperatorType               = NSLikePredicateOperatorType,                 // like  
+    KintoneNotLikeQueryOperatorType            = 101                                          // not like  
+};  
+</code></pre>
+
+<h2>クエリ作成の例</h2>
+
+<p>f1 like &ldquo;API&rdquo; and f2 = &ldquo;kintone&rdquo; and  (f3 > 10 or f4 in (&ldquo;S&rdquo;, &ldquo;A&rdquo;) ) order by f5 desc limit 5 offset 10<br/>
+※ f1 - f5 は、各フィールドのフィールドコード。</p>
+
+<pre><code>// Field1 は f1 に対応  
+KintoneQuery *q = [KintoneQuery new];  
+[q where:  
+    [q and:  
+        [q like:Field1 value:@"API"],  
+        [q eq:Field2 value:@"kintone"],  
+        [q or:  
+            [q greaterThan:Field3 value:10],  
+            [q in:Field4 value:@[@"S", @"A"]], nil  
+        ], nil  
+    ]  
+];  
+[q orderBy:Kintone5 asc:NO];  
+[q limit:5];  
+[q offset:10];  
+</code></pre>
+
+<p>詳しくは <a href="http://developers.cybozu.com/ja/kintone/apprec-readapi.html">cybozu.com developers - レコード取得</a> を参照。</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="句" name="task_句"></a>
+						<h3 class="subsubtitle task-title">句</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/where:">&ndash;&nbsp;where:</a></code>
+		<span class="tooltip"><p>where 句を設定します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/orderBy:asc:">&ndash;&nbsp;orderBy:asc:</a></code>
+		<span class="tooltip"><p>order by 句を設定します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/limit:">&ndash;&nbsp;limit:</a></code>
+		<span class="tooltip"><p>limit 句を設定します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/offset:">&ndash;&nbsp;offset:</a></code>
+		<span class="tooltip"><p>offset 句を設定します。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="演算子" name="task_演算子"></a>
+						<h3 class="subsubtitle task-title">演算子</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/and:">&ndash;&nbsp;and:</a></code>
+		<span class="tooltip"><p>&ldquo;and&rdquo; 演算子です。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/or:">&ndash;&nbsp;or:</a></code>
+		<span class="tooltip"><p>&ldquo;or&rdquo; 演算子です。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eq:value:">&ndash;&nbsp;eq:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>=</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notEq:value:">&ndash;&nbsp;notEq:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>!=</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/greaterThan:value:">&ndash;&nbsp;greaterThan:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>&gt;</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lessThan:value:">&ndash;&nbsp;lessThan:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>&lt;</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/greaterThanOrEqual:value:">&ndash;&nbsp;greaterThanOrEqual:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>&gt;=</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lessThanOrEqual:value:">&ndash;&nbsp;lessThanOrEqual:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>&lt;=</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/in:value:">&ndash;&nbsp;in:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>in</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notIn:value:">&ndash;&nbsp;notIn:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>not in</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/like:value:">&ndash;&nbsp;like:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>like</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/notLike:value:">&ndash;&nbsp;notLike:value:</a></code>
+		<span class="tooltip"><p>&ldquo;<code>not like</code>&rdquo; 演算子を使った条件文を生成します。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="クエリ文字列" name="task_クエリ文字列"></a>
+						<h3 class="subsubtitle task-title">クエリ文字列</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/kintoneQuery">&ndash;&nbsp;kintoneQuery</a></code>
+		<span class="tooltip"><p>kintone アプリのレコード一括取得用のクエリ文字列です。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/and:" title="and:"></a>
+	<h3 class="subsubtitle method-title">and:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;and&rdquo; 演算子です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)and:(NSArray *)<em>conditions</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>conditions</em></dt>
+			<dd><p>条件文</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p><code>nil</code> 終端</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>指定された条件文の &ldquo;and&rdquo; 結合を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;and&rdquo; 演算子です。</p>
+
+<p>指定された条件文を &ldquo;and&rdquo; で結合します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eq:value:" title="eq:value:"></a>
+	<h3 class="subsubtitle method-title">eq:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)eq:(KintoneField *)<em>field</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>=</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/greaterThan:value:" title="greaterThan:value:"></a>
+	<h3 class="subsubtitle method-title">greaterThan:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>&gt;</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)greaterThan:(KintoneField *)<em>field</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>&gt;</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>&gt;</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/greaterThanOrEqual:value:" title="greaterThanOrEqual:value:"></a>
+	<h3 class="subsubtitle method-title">greaterThanOrEqual:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>&gt;=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)greaterThanOrEqual:(KintoneField *)<em>field</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>&gt;=</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>&gt;=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/in:value:" title="in:value:"></a>
+	<h3 class="subsubtitle method-title">in:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>in</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)in:(KintoneField *)<em>field</em> value:(NSArray *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>in</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>in</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/kintoneQuery" title="kintoneQuery"></a>
+	<h3 class="subsubtitle method-title">kintoneQuery</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>kintone アプリのレコード一括取得用のクエリ文字列です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)kintoneQuery</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>インスタンスに設定した句で生成されるクエリ文字列</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>kintone アプリのレコード一括取得用のクエリ文字列です。</p>
+
+<p><a href="../Classes/KintoneAPI.html#//api/name/recordsWithFields:query:success:failure:queue:"><code>[KintoneAPI recordsWithFields:query:success:failure:queue:]</code></a> の <code>query</code> として利用します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lessThan:value:" title="lessThan:value:"></a>
+	<h3 class="subsubtitle method-title">lessThan:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>&lt;</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)lessThan:(KintoneField *)<em>field</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>&lt;</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>&lt;</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lessThanOrEqual:value:" title="lessThanOrEqual:value:"></a>
+	<h3 class="subsubtitle method-title">lessThanOrEqual:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>&lt;=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)lessThanOrEqual:(KintoneField *)<em>field</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>&lt;=</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>&lt;=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/like:value:" title="like:value:"></a>
+	<h3 class="subsubtitle method-title">like:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>like</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)like:(KintoneField *)<em>field</em> value:(NSString *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>like</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>like</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/limit:" title="limit:"></a>
+	<h3 class="subsubtitle method-title">limit:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>limit 句を設定します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)limit:(int)<em>limit</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>limit</em></dt>
+			<dd><p>limit 値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>limit 句を設定します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notEq:value:" title="notEq:value:"></a>
+	<h3 class="subsubtitle method-title">notEq:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>!=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)notEq:(KintoneField *)<em>field</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>!=</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>!=</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notIn:value:" title="notIn:value:"></a>
+	<h3 class="subsubtitle method-title">notIn:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>not in</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)notIn:(KintoneField *)<em>field</em> value:(NSArray *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>not in</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>not in</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/notLike:value:" title="notLike:value:"></a>
+	<h3 class="subsubtitle method-title">notLike:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;<code>not like</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)notLike:(KintoneField *)<em>field</em> value:(NSString *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>左辺のフィールドオブジェクト</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>右辺の比較値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>&ldquo;<code>not like</code>&rdquo; 演算子を使った条件文を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;<code>not like</code>&rdquo; 演算子を使った条件文を生成します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/offset:" title="offset:"></a>
+	<h3 class="subsubtitle method-title">offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>offset 句を設定します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)offset:(int)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>offset 値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>offset 句を設定します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/or:" title="or:"></a>
+	<h3 class="subsubtitle method-title">or:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>&ldquo;or&rdquo; 演算子です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)or:(NSArray *)<em>condition</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>...</em></dt>
+			<dd><p><code>nil</code> 終端</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>conditions</em></dt>
+			<dd><p>条件文</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>指定された条件文の &ldquo;or&rdquo; 結合を表す <code>NSArray</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>&ldquo;or&rdquo; 演算子です。</p>
+
+<p>指定された条件文を &ldquo;or&rdquo; で結合します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/orderBy:asc:" title="orderBy:asc:"></a>
+	<h3 class="subsubtitle method-title">orderBy:asc:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>order by 句を設定します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)orderBy:(KintoneField *)<em>field</em> asc:(BOOL)<em>asc</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>field</em></dt>
+			<dd><p>ソート対象フィールド</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>asc</em></dt>
+			<dd><p><code>YES</code>: 昇順、<code>NO</code>: 降順</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>order by 句を設定します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/where:" title="where:"></a>
+	<h3 class="subsubtitle method-title">where:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>where 句を設定します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)where:(NSArray *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>演算子メソッドにて生成された <code>NSArray</code></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>where 句を設定します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cybozu. All rights reserved. (Last updated: 2013-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+[Third party programs list]
+
+* AFNetworking
+  This program includes AFNetworking.
+
+  Copyright (c) 2013 AFNetworking (http://afnetworking.com/)
+  See "AFNetworking_LICENSE.txt" for license details.
+
+
+* Google Toolbox for Mac
+  This program includes Google Toolbox for Mac.
+
+  Copyright 2007 Google Inc.
+  See "COPYING_GTM.txt" for license details.
+
+
+* Cocoa Lumberjack
+  This program includes Cocoa Lumberjack.
+
+  Copyright (c) 2010, Deusty, LLC
+  See "LICENSE_Lumberjack.txt" for license details.

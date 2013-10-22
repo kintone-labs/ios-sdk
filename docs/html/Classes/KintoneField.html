@@ -1,0 +1,1796 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>KintoneField Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">kintone SDK for iOS </a></h1>
+				<a id="developerHome" href="../index.html">Cybozu</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KintoneField Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/code">&nbsp;&nbsp;&nbsp;&nbsp;code</option>
+	
+	<option value="//api/name/defaultExpression">&nbsp;&nbsp;&nbsp;&nbsp;defaultExpression</option>
+	
+	<option value="//api/name/defaultValue">&nbsp;&nbsp;&nbsp;&nbsp;defaultValue</option>
+	
+	<option value="//api/name/digit">&nbsp;&nbsp;&nbsp;&nbsp;digit</option>
+	
+	<option value="//api/name/expression">&nbsp;&nbsp;&nbsp;&nbsp;expression</option>
+	
+	<option value="//api/name/format">&nbsp;&nbsp;&nbsp;&nbsp;format</option>
+	
+	<option value="//api/name/label">&nbsp;&nbsp;&nbsp;&nbsp;label</option>
+	
+	<option value="//api/name/maxLength">&nbsp;&nbsp;&nbsp;&nbsp;maxLength</option>
+	
+	<option value="//api/name/maxValue">&nbsp;&nbsp;&nbsp;&nbsp;maxValue</option>
+	
+	<option value="//api/name/minLength">&nbsp;&nbsp;&nbsp;&nbsp;minLength</option>
+	
+	<option value="//api/name/minValue">&nbsp;&nbsp;&nbsp;&nbsp;minValue</option>
+	
+	<option value="//api/name/noLabel">&nbsp;&nbsp;&nbsp;&nbsp;noLabel</option>
+	
+	<option value="//api/name/options">&nbsp;&nbsp;&nbsp;&nbsp;options</option>
+	
+	<option value="//api/name/protocol">&nbsp;&nbsp;&nbsp;&nbsp;protocol</option>
+	
+	<option value="//api/name/required">&nbsp;&nbsp;&nbsp;&nbsp;required</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/unique">&nbsp;&nbsp;&nbsp;&nbsp;unique</option>
+	
+	<option value="//api/name/value">&nbsp;&nbsp;&nbsp;&nbsp;value</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/fieldTypeForFieldTypeName:">&nbsp;&nbsp;&nbsp;&nbsp;+ fieldTypeForFieldTypeName:</option>
+	
+	<option value="//api/name/fieldTypeNameForFieldType:">&nbsp;&nbsp;&nbsp;&nbsp;+ fieldTypeNameForFieldType:</option>
+	
+	<option value="//api/name/fieldsFromJSON:">&nbsp;&nbsp;&nbsp;&nbsp;+ fieldsFromJSON:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/conditionQuery:value:">&nbsp;&nbsp;&nbsp;&nbsp;- conditionQuery:value:</option>
+	
+	<option value="//api/name/initWithProperties:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithProperties:</option>
+	
+	<option value="//api/name/json">&nbsp;&nbsp;&nbsp;&nbsp;- json</option>
+	
+	<option value="//api/name/setValue:error:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:error:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_プロパティ">プロパティ</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_インスタンス生成">インスタンス生成</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_メソッド">メソッド</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/code">code</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultExpression">defaultExpression</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultValue">defaultValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/digit">digit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expression">expression</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/format">format</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/label">label</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxLength">maxLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxValue">maxValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minLength">minLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minValue">minValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/noLabel">noLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/options">options</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/protocol">protocol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/required">required</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unique">unique</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/value">value</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fieldTypeForFieldTypeName:">fieldTypeForFieldTypeName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fieldTypeNameForFieldType:">fieldTypeNameForFieldType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fieldsFromJSON:">fieldsFromJSON:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/conditionQuery:value:">conditionQuery:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithProperties:">initWithProperties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/json">json</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:error:">setValue:error:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="KintoneField Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KintoneField Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">KintoneField.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>kintone アプリのフィールドクラスです。</p>
+
+<p>フィールドタイプ毎のサブフィールドクラスの詳細は、それぞれのフィールドクラスのドキュメントを参照してください。</p>
+
+<h2>フィールドタイプ</h2>
+
+<pre><code>typedef NS_ENUM(NSUInteger, KintoneFieldType) {  
+    KintoneLabelFieldType = 1,      // 1  
+    KintoneSingleLineTextFieldType, // 2  
+    KintoneNumberFieldType,         // 3  
+    KintoneCalcFieldType,           // 4  
+    KintoneMultiLineTextFieldType,  // 5  
+    KintoneRichTextFieldType,       // 6  
+    KintoneCheckBoxFieldType,       // 7  
+    KintoneRadioButtonFieldType,    // 8  
+    KintoneDropDownFieldType,       // 9  
+    KintoneMultiSelectFieldType,    // 10  
+    KintoneFileFieldType,           // 11  
+    KintoneDateFieldType,           // 12  
+    KintoneTimeFieldType,           // 13  
+    KintoneDatetimeFieldType,       // 14  
+    KintoneLinkFieldType,           // 15  
+    KintoneUserSelectFieldType,     // 16  
+    KintoneLookupFieldType,         // 17  
+    KintoneReferenceTableFieldType, // 18  
+    KintoneCategoryFieldType,       // 19  
+    KintoneStatusFieldType,         // 20  
+    KintoneStatusAssigneeFieldType, // 21  
+    KintoneRecordNumberFieldType,   // 22  
+    KintoneCreatorFieldType,        // 23  
+    KintoneCreatedTimeFieldType,    // 24  
+    KintoneModifierFieldType,       // 25  
+    KintoneUpdatedTimeFieldType,    // 26  
+    KintoneSubtableFieldType,       // 27  
+    KintoneUnsupportedFieldType     // 28  
+};
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="プロパティ" name="task_プロパティ"></a>
+						<h3 class="subsubtitle task-title">プロパティ</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/label">&nbsp;&nbsp;label</a></code>
+		<span class="tooltip"><p>フィールド名です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/code">&nbsp;&nbsp;code</a></code>
+		<span class="tooltip"><p>フィールドコードです。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+		<span class="tooltip"><p>フィールドタイプです。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/required">&nbsp;&nbsp;required</a></code>
+		<span class="tooltip"><p>入力必須フィールドかどうかを表します。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/noLabel">&nbsp;&nbsp;noLabel</a></code>
+		<span class="tooltip"><p>フィールド名の非表示を表します。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unique">&nbsp;&nbsp;unique</a></code>
+		<span class="tooltip"><p>重複可否を表します。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxValue">&nbsp;&nbsp;maxValue</a></code>
+		<span class="tooltip"><p>数値フィールドの入力可能な最大値です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minValue">&nbsp;&nbsp;minValue</a></code>
+		<span class="tooltip"><p>数値フィールドの入力可能な最小値です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxLength">&nbsp;&nbsp;maxLength</a></code>
+		<span class="tooltip"><p>文字列フィールドの入力可能な最大文字数です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minLength">&nbsp;&nbsp;minLength</a></code>
+		<span class="tooltip"><p>文字列フィールドの入力可能な最小文字数です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultValue">&nbsp;&nbsp;defaultValue</a></code>
+		<span class="tooltip"><p>初期値です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultExpression">&nbsp;&nbsp;defaultExpression</a></code>
+		<span class="tooltip"><p>初期値の式です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/options">&nbsp;&nbsp;options</a></code>
+		<span class="tooltip"><p>選択系フィールドの選択項目です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expression">&nbsp;&nbsp;expression</a></code>
+		<span class="tooltip"><p>自動計算値です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/digit">&nbsp;&nbsp;digit</a></code>
+		<span class="tooltip"><p>数値の桁区切り表示を表します。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/protocol">&nbsp;&nbsp;protocol</a></code>
+		<span class="tooltip"><p>リンクの種類を表します。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/format">&nbsp;&nbsp;format</a></code>
+		<span class="tooltip"><p>表示形式です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/value">&nbsp;&nbsp;value</a></code>
+		<span class="tooltip"><p>フィールド値です。</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="インスタンス生成" name="task_インスタンス生成"></a>
+						<h3 class="subsubtitle task-title">インスタンス生成</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithProperties:">&ndash;&nbsp;initWithProperties:</a></code>
+		<span class="tooltip"><p><code>KintoneField</code> もしくは <code>KintoneField</code> を継承するクラスを返します。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="メソッド" name="task_メソッド"></a>
+						<h3 class="subsubtitle task-title">メソッド</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fieldTypeForFieldTypeName:">+&nbsp;fieldTypeForFieldTypeName:</a></code>
+		<span class="tooltip"><p>指定されたフィールドタイプ名の <code>KintoneFieldType</code> を返します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fieldTypeNameForFieldType:">+&nbsp;fieldTypeNameForFieldType:</a></code>
+		<span class="tooltip"><p>指定された <code>KintoneFieldType</code> に対応するフィールドタイプ文字列を返します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fieldsFromJSON:">+&nbsp;fieldsFromJSON:</a></code>
+		<span class="tooltip"><p>指定された JSON 形式のフィールド定義より、<a href="#//api/name/code"><code>code</code></a> をキーとした <code>KintoneField</code> 一覧を返します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/conditionQuery:value:">&ndash;&nbsp;conditionQuery:value:</a></code>
+		<span class="tooltip"><p>指定された演算子と値で、kintone クエリの条件文を生成します。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:error:">&ndash;&nbsp;setValue:error:</a></code>
+		<span class="tooltip"><p>フィールドに値をセットします。</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/json">&ndash;&nbsp;json</a></code>
+		<span class="tooltip"><p>フィールドの JSON 形式の定義を返します。</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/code" title="code"></a>
+	<h3 class="subsubtitle method-title">code</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールドコードです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *code</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールドコードです。</p>
+
+<p>フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultExpression" title="defaultExpression"></a>
+	<h3 class="subsubtitle method-title">defaultExpression</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初期値の式です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *defaultExpression</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初期値の式です。</p>
+
+<p>日付、時刻、日時フィールドで利用されます。"Now" もしくは <code>NSNull</code> となります。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultValue" title="defaultValue"></a>
+	<h3 class="subsubtitle method-title">defaultValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>初期値です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) id defaultValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>初期値です。</p>
+
+<p>複数初期値が指定可能なフィールドは <code>NSArray</code> となります。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/digit" title="digit"></a>
+	<h3 class="subsubtitle method-title">digit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>数値の桁区切り表示を表します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL digit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>数値の桁区切り表示を表します。</p>
+
+<p>フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expression" title="expression"></a>
+	<h3 class="subsubtitle method-title">expression</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>自動計算値です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *expression</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>自動計算値です。</p>
+
+<p>例："金額" * &ldquo;数量"。フィールドはフィールドコードにて記述されます。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/format" title="format"></a>
+	<h3 class="subsubtitle method-title">format</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>表示形式です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *format</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>表示形式です。</p>
+
+<p>&ldquo;NUMBER&rdquo;, &ldquo;NUMBER_DIGIT&rdquo;, &ldquo;DATETIME&rdquo;, &ldquo;DATE&rdquo;, &ldquo;TIME&rdquo;, &ldquo;HOUR_MINUTE&rdquo;, &ldquo;DAY_HOUR_MINUTE&rdquo; のいずれかです。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/label" title="label"></a>
+	<h3 class="subsubtitle method-title">label</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールド名です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *label</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールド名です。</p>
+
+<p>全てのフィールドに付与されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxLength" title="maxLength"></a>
+	<h3 class="subsubtitle method-title">maxLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>文字列フィールドの入力可能な最大文字数です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) int maxLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>文字列フィールドの入力可能な最大文字数です。</p>
+
+<p>存在しない場合、<code>INT_MAX</code> が設定されます。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxValue" title="maxValue"></a>
+	<h3 class="subsubtitle method-title">maxValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>数値フィールドの入力可能な最大値です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) int maxValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>数値フィールドの入力可能な最大値です。</p>
+
+<p>存在しない場合、<code>INT_MAX</code> が設定されます。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minLength" title="minLength"></a>
+	<h3 class="subsubtitle method-title">minLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>文字列フィールドの入力可能な最小文字数です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) int minLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>文字列フィールドの入力可能な最小文字数です。</p>
+
+<p>存在しなし場合、<code>0</code> が設定されます。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minValue" title="minValue"></a>
+	<h3 class="subsubtitle method-title">minValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>数値フィールドの入力可能な最小値です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) int minValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>数値フィールドの入力可能な最小値です。</p>
+
+<p>存在しない場合、<code>0</code> が設定されます。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/noLabel" title="noLabel"></a>
+	<h3 class="subsubtitle method-title">noLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールド名の非表示を表します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL noLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールド名の非表示を表します。</p>
+
+<p>フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/options" title="options"></a>
+	<h3 class="subsubtitle method-title">options</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>選択系フィールドの選択項目です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSArray *options</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>選択系フィールドの選択項目です。</p>
+
+<p><code>NSString</code> で指定されます。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/protocol" title="protocol"></a>
+	<h3 class="subsubtitle method-title">protocol</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>リンクの種類を表します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *protocol</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>リンクの種類を表します。</p>
+
+<p>&ldquo;WEB&rdquo;, &ldquo;CALL&rdquo;, &ldquo;MAIL&rdquo; のいずれかです。フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/required" title="required"></a>
+	<h3 class="subsubtitle method-title">required</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>入力必須フィールドかどうかを表します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL required</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>入力必須フィールドかどうかを表します。</p>
+
+<p>フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールドタイプです。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) KintoneFieldType type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールドタイプです。</p>
+
+<p>上記 <code>KintoneFieldType</code> となります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unique" title="unique"></a>
+	<h3 class="subsubtitle method-title">unique</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>重複可否を表します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL unique</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>重複可否を表します。</p>
+
+<p>フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/value" title="value"></a>
+	<h3 class="subsubtitle method-title">value</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールド値です。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) id value</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールド値です。</p>
+
+<p>フィールドタイプによって存在しない場合があります。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/fieldTypeForFieldTypeName:" title="fieldTypeForFieldTypeName:"></a>
+	<h3 class="subsubtitle method-title">fieldTypeForFieldTypeName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定されたフィールドタイプ名の <code>KintoneFieldType</code> を返します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (KintoneFieldType)fieldTypeForFieldTypeName:(NSString *)<em>fieldTypeName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldTypeName</em></dt>
+			<dd><p>kintone API レスポンスで返されるフィールタイプを表す文字列</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>fieldTypeName</code> に対応する <code>KintoneFieldType</code></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>指定されたフィールドタイプ名の <code>KintoneFieldType</code> を返します。</p>
+
+<p><a href="#//api/name/fieldTypeNameForFieldType:"><code>fieldTypeNameForFieldType:</code></a> で逆変換ができます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fieldTypeNameForFieldType:" title="fieldTypeNameForFieldType:"></a>
+	<h3 class="subsubtitle method-title">fieldTypeNameForFieldType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定された <code>KintoneFieldType</code> に対応するフィールドタイプ文字列を返します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)fieldTypeNameForFieldType:(KintoneFieldType)<em>fieldType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldType</em></dt>
+			<dd><p><code>KintoneFieldType</code> 値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>fieldType</code> に対応するフィールドタイプ文字列</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>指定された <code>KintoneFieldType</code> に対応するフィールドタイプ文字列を返します。</p>
+
+<p><a href="#//api/name/fieldTypeForFieldTypeName:"><code>fieldTypeForFieldTypeName:</code></a> で逆変換ができます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fieldsFromJSON:" title="fieldsFromJSON:"></a>
+	<h3 class="subsubtitle method-title">fieldsFromJSON:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定された JSON 形式のフィールド定義より、<a href="#//api/name/code"><code>code</code></a> をキーとした <code>KintoneField</code> 一覧を返します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)fieldsFromJSON:(id)<em>JSON</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>JSON</em></dt>
+			<dd><p>JSON 形式の kintone アプリのフィールド定義</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><a href="#//api/name/code"><code>code</code></a> をキーとした <code>KintoneField</code>。フィールドコード <a href="#//api/name/code"><code>code</code></a> を含まないフィールド (ラベルフィールド) は返り値に含まれません。</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>指定された JSON 形式のフィールド定義より、<a href="#//api/name/code"><code>code</code></a> をキーとした <code>KintoneField</code> 一覧を返します。</p>
+
+<p><code></code>KintoneAPI<code> form:failure:queue:</code> でのレスポンスに適用することを想定しています。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/conditionQuery:value:" title="conditionQuery:value:"></a>
+	<h3 class="subsubtitle method-title">conditionQuery:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定された演算子と値で、kintone クエリの条件文を生成します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)conditionQuery:(KintoneQueryOperatorType)<em>operator</em> value:(id)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operator</em></dt>
+			<dd><p>kintone クエリ演算子</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>フィールド値</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>指定された演算子と値で生成された kintone クエリ条件文</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>指定された演算子と値で、kintone クエリの条件文を生成します。</p>
+
+<p>本メソッドは主に <a href="../Classes/KintoneQuery.html"><code>KintoneQuery</code></a> 内部から呼ばれることを想定しています。返される条件文は、フィールドタイプにより異なります。演算子、値はフィールドタイプ毎にサポートされるものかチェックされ、不正な場合は assert で失敗します。具体的には、各 <code>KintoneField</code> サブクラスの <code>conditionQuery</code> を参照してください。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithProperties:" title="initWithProperties:"></a>
+	<h3 class="subsubtitle method-title">initWithProperties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><code>KintoneField</code> もしくは <code>KintoneField</code> を継承するクラスを返します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithProperties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>properties</em></dt>
+			<dd><p>上記プロパティで挙げられた property のみサポートします。これら以外のプロパティは無視されます。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>KintoneField</code> もしくは <code>KintoneField</code> を継承するクラスインスタンス</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><code>KintoneField</code> もしくは <code>KintoneField</code> を継承するクラスを返します。</p>
+
+<p>指定された <a href="#//api/name/type"><code>type</code></a> に応じたクラスが返されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/json" title="json"></a>
+	<h3 class="subsubtitle method-title">json</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールドの JSON 形式の定義を返します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)json</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>フィールド の JSON 形式の定義</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールドの JSON 形式の定義を返します。</p>
+
+<p>フィールド定義は JSON 文字列ではなく、<code>NSDictionary</code>, <code>NSArray</code> を利用し、表現されます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:error:" title="setValue:error:"></a>
+	<h3 class="subsubtitle method-title">setValue:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>フィールドに値をセットします。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setValue:(id)<em>value</em> error:(CBError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>フィールド値</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>フィールド値が不正な場合 <code>K_ERROR_00001</code> エラー</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>フィールド値が正常にセットされれば YES、不正な値の場合は NO</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>フィールドに値をセットします。</p>
+
+<p>フィールドタイプ、プロパティ値が適切に設定されている場合、サポート対象の値かチェックされます。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">KintoneField.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Cybozu. All rights reserved. (Last updated: 2013-07-31)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

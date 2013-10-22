@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'sdk' target in the 'sdk' project
+//
+
+#import <Availability.h>
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 60000
+#error "This project requires features only available in iOS 6.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <UIKit/UIKit.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import "CBError.h"
+    #import "CBLog.h"
+    #import "NSString+Utility.h"
+#endif
