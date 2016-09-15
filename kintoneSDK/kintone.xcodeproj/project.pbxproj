@@ -71,7 +71,6 @@
 		F1F37BA8173A531400CB97D9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37BA7173A531400CB97D9 /* Security.framework */; };
 		F1F37BAA173A531E00CB97D9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37BA9173A531D00CB97D9 /* CoreData.framework */; };
 		F1F37BAC173A53D400CB97D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F37BAB173A53D400CB97D9 /* UIKit.framework */; };
-		F1F870FC17A23343001B002D /* kintoneResources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F199C636174F4BF00044B01F /* kintoneResources-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -436,7 +435,7 @@
 		F1F37B58173A3E5E00CB97D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Cybozu;
 			};
 			buildConfigurationList = F1F37B5B173A3E5E00CB97D9 /* Build configuration list for PBXProject "kintone" */;
@@ -465,7 +464,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F870FC17A23343001B002D /* kintoneResources-Info.plist in Resources */,
 				F199C640174F4CCB0044B01F /* KintoneLocalizable.strings in Resources */,
 				F17B3B8F174F7F54001BD877 /* KintoneErrorMessages.plist in Resources */,
 			);
@@ -498,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FRAMEWORK_BUILD_CONFIGURATION=\"Release\"\nFRAMEWORK_BUILD_PATH=\"Framework\"\n\ncp -Rf build/${FRAMEWORK_BUILD_CONFIGURATION}-${PLATFORM_NAME}/${FULL_PRODUCT_NAME} ${FRAMEWORK_BUILD_PATH}/\ncd ${FRAMEWORK_BUILD_PATH}\nzip -ry ${FULL_PRODUCT_NAME}.zip ${FULL_PRODUCT_NAME}";
+			shellScript = "FRAMEWORK_BUILD_PATH=\"Framework\"\n\ncp -Rf ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${FRAMEWORK_BUILD_PATH}/\ncd ${FRAMEWORK_BUILD_PATH}\nzip -ry ${FULL_PRODUCT_NAME}.zip ${FULL_PRODUCT_NAME}\n";
 		};
 		F1F37BA6173A46FF00CB97D9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -618,7 +616,6 @@
 		F199C63C174F4BF00044B01F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -627,6 +624,7 @@
 				INFOPLIST_FILE = "kintoneResources/kintoneResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cybozu.kintone.sdk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -637,7 +635,6 @@
 		F199C63D174F4BF00044B01F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -647,6 +644,7 @@
 				INFOPLIST_FILE = "kintoneResources/kintoneResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cybozu.kintone.sdk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -667,6 +665,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -678,7 +677,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -701,7 +700,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
