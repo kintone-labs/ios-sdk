@@ -132,6 +132,9 @@ static NSDictionary *fieldTypeToFieldTypeName()
 
 + (KintoneFieldType)fieldTypeForFieldTypeName:(NSString *)fieldTypeName
 {
+    if (fieldTypeNameToFieldType()[fieldTypeName] == nil) {
+        return KintoneUnsupportedFieldType;
+    }
     return [fieldTypeNameToFieldType()[fieldTypeName] intValue];
 }
 
@@ -266,7 +269,7 @@ static NSDictionary *fieldTypeToFieldTypeName()
     
     for (NSDictionary *properties in JSON[@"properties"]) {
         KintoneFieldType fieldType = [KintoneField fieldTypeForFieldTypeName:properties[@"type"]];
-        if (fieldType == KintoneLabelFieldType) {
+        if (fieldType == KintoneUnsupportedFieldType || fieldType == KintoneLabelFieldType) {
             // label field is omitted because it has no unique key "code"
             continue;
         }
