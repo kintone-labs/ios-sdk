@@ -10,4 +10,4 @@ xcode 9 or later.
 This program is available under Apache license. See the LICENSE file for more info.
 
 ## Third party programs
-This program includes third party programs. See detail at ThirdPartyProgramsList folder.
+This program includes third party programs. See the ThirdPartyProgramsLists file for more info.
