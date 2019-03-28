@@ -1,5 +1,8 @@
-kintone SDK for iOS
+kintone SDK for iOS (Deprecated)
 ===========
+
+## This sdk has been deprecated. Please use [kintone-ios-sdk](https://github.com/kintone/kintone-ios-sdk)
+
 version 0.1.1
 
 ## Requirement
